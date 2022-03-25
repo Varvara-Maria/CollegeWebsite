@@ -12,7 +12,10 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 ### The Main repo in this github is DEVELOPMENT
 
-##### Clone pls this repo and if u frontend developer go to CollegeWebsite/ClientApp and ...
+##### Clone pls this repo and if u frontend developer go to CollegeWebsite/ClientApp and run command "npm start"
 
-![This is an image](https://procoders.tech/wp-content/uploads/2020/11/Lets-get-to-work.gif)
+1. Each task is placed on the board and performed in a new branch
+2. Please be kind to each other and help everyone
+
+![Cool Image](https://procoders.tech/wp-content/uploads/2020/11/Lets-get-to-work.gif)
 
