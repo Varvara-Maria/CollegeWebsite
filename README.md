@@ -19,3 +19,16 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 ![Cool Image](https://procoders.tech/wp-content/uploads/2020/11/Lets-get-to-work.gif)
 
+
+## Some commands for git: 
+
+1. "git branch" - display all your local branch
+2. "git branch <NameOfBranch>" - create new Local branch
+3. "git add . " - add new files to commit
+4. "git commit -m "Some text for commit" " - commit your changes with some messages
+5. "git push" - push your local changes to remote branch
+6. "git pull" - merge all your and remote files
+7. "git checkout -b <branch-name>" - create new branch and checkout
+8. "git checkout <branch-name>" - switched for you typing branch
+9. if you push your local branch for the first time, git write command for you. Pls copy and paste it
+
