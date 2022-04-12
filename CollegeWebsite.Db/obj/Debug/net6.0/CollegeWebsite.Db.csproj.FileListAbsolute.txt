@@ -1,0 +1,12 @@
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/bin/Debug/net6.0/CollegeWebsite.Db.deps.json
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/bin/Debug/net6.0/CollegeWebsite.Db.dll
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/bin/Debug/net6.0/CollegeWebsite.Db.pdb
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.csproj.AssemblyReference.cache
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.AssemblyInfoInputs.cache
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.AssemblyInfo.cs
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.csproj.CoreCompileInputs.cache
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.dll
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/refint/CollegeWebsite.Db.dll
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/CollegeWebsite.Db.pdb
+/Users/mac/Desktop/CollegeWebsite/CollegeWebsite.Db/obj/Debug/net6.0/ref/CollegeWebsite.Db.dll
