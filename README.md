@@ -12,7 +12,7 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 ### The Main repo in this github is DEVELOPMENT
 
-##### Clone pls this repo and if u frontend developer go to CollegeWebsite/ClientApp and run command "npm start"
+##### Clone pls this repo and if u frontend developer go to CollegeWebsite/client and run command "npm start"
 
 1. Each task is placed on the board and performed in a new branch
 2. Please be kind to each other and help everyone
