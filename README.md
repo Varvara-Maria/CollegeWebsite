@@ -9,7 +9,7 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 
 ## Lets START
-
+[TEMPLATE WEBSITE](https://max-themes.net/demos/kingster/kingster/index.html#)
 ### The Main repo in this github is DEVELOPMENT
 
 ##### Clone pls this repo and if u frontend developer go to CollegeWebsite/client and run command "npm start"
