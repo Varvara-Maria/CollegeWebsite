@@ -34,3 +34,4 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 ## Some resources: 
 1. [Video about college](https://www.youtube.com/watch?v=-v9ww4nHxvc)
+2. [YouTube chanel](youtube.com/channel/UCBuzSLf5pOVz37U6rF9XtyA/videos)
