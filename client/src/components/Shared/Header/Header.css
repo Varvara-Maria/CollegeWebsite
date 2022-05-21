@@ -1,0 +1,47 @@
+.header {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    background: rgb(47, 58, 153);
+    z-index: 2;
+}
+
+.header{
+  
+}
+.header .menu{
+    width: 100%;
+    height: 100%;
+}
+.header .menu ul{
+    display: flex;
+    font-size: 17px;
+    color:rgb(237, 238, 237);
+
+}
+.header .menu ul li{
+    margin-right: 10px;
+    list-style: none;
+    height: 100%;
+    width: fit-content;
+}
+
+
+
+.header.fixed {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 1);
+    animation-name: header__visible;
+}
+
+@keyframes header__visible{
+    0% {
+        visibility: hidden;
+        opacity: 0;
+
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
