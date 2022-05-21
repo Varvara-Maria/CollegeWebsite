@@ -32,3 +32,5 @@ Website for CollegeCHNU By Y.Fedkovuch
 8. "git checkout <branch-name>" - switched for you typing branch
 9. if you push your local branch for the first time, git write command for you. Pls copy and paste it
 
+## Some resources: 
+1. [Video about college](https://www.youtube.com/watch?v=-v9ww4nHxvc)
