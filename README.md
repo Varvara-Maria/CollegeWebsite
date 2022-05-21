@@ -9,7 +9,7 @@ Website for CollegeCHNU By Y.Fedkovuch
 
 
 ## Lets START
-
+[TEMPLATE WEBSITE](https://max-themes.net/demos/kingster/kingster/index.html#)
 ### The Main repo in this github is DEVELOPMENT
 
 ##### Clone pls this repo and if u frontend developer go to CollegeWebsite/client and run command "npm start"
@@ -32,3 +32,6 @@ Website for CollegeCHNU By Y.Fedkovuch
 8. "git checkout <branch-name>" - switched for you typing branch
 9. if you push your local branch for the first time, git write command for you. Pls copy and paste it
 
+## Some resources: 
+1. [Video about college](https://www.youtube.com/watch?v=-v9ww4nHxvc)
+2. [YouTube chanel](https://www.youtube.com/channel/UCBuzSLf5pOVz37U6rF9XtyA/featured)
