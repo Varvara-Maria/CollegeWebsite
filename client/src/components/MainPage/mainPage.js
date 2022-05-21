@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './mainPage.css'
 const MainPage = () => {
   return (
-    <div>mainPageadsdasdasdssadad</div>
+    <div className= "mainpage">mainPageadsdasdasdssadad</div>
   )
 }
 
