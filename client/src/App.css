@@ -3,3 +3,11 @@
   width: 80%;
   height: inherit;
 }
+.App{
+  
+ /* width: 100%;*/
+  overflow: hidden;
+}
+button{
+  cursor: pointer;
+}
