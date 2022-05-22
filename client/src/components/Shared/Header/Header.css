@@ -1,0 +1,133 @@
+.header {
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top:0;
+    background: #1A3853;
+    z-index: 2;
+  
+}
+a{
+   height: inherit;
+    color:inherit;
+}
+
+.menu .topmenu a {
+    display: grid;
+    place-items: center;
+    position: relative;
+    text-decoration: none;
+  }
+
+.header .topmenu >li:hover{
+    color: rgb(37, 179, 124);
+}
+
+.menu .topmenu a:active{
+    color:rgb(37, 179, 124);
+    text-decoration: none;
+}
+.menu .topmenu a:focus{
+    color:rgb(37, 179, 124);;
+    text-decoration: none;
+}
+  .menu .topmenu a:after {    
+    background: none repeat scroll 0 0 transparent;
+    top:94%;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: rgb(37, 179, 124);
+    transition: 0.3s ;
+    
+    width: 0;
+  }
+  .menu .topmenu  a:hover:after { 
+      
+    width: 100%; 
+    left: 0; 
+  }
+  
+  .menu .topmenu a:focus:after { 
+      
+    width: 100%; 
+    left: 0; 
+  }
+  
+  
+.menu:ul:last-child{
+    margin: 0 !important;
+}
+.header .menu{
+    width: 100%;
+    height: inherit;
+    display: grid;
+    place-content: center;
+}
+.header .menu ul{
+    height: inherit;
+    display: flex;
+    font-size: 20px;
+    color:rgb(237, 238, 237);
+    font-weight: 500;
+    cursor: pointer;
+}
+.header .menu ul li{
+    display: grid;
+    place-items: center;
+    margin-right: 20px;
+    list-style: none;
+    height: 100%;
+    width: fit-content;
+}
+.header .menu .topmenu >li{
+    position: relative;
+}
+.header .menu .topmenu >li:hover .submenu{
+    transition: 0.5s;
+    display: block;
+}
+.header .menu .submenu{
+    display: none;
+    font-size: 16px;
+    font-weight: 400;
+    color:rgb(81, 83, 81);
+    overflow: hidden;
+    position: absolute;
+    width: 215px;
+    height: fit-content;
+    transition: 0.5s;
+    background: #EEEEEE;
+    top:100%;
+    left: 0;
+    cursor: pointer;
+    
+
+}
+.header .menu .submenu li:hover{
+    color:rgb(233, 224, 224);
+    background: #496a86;
+}.header .menu .submenu li{
+    display: grid;
+    place-items: start;
+    width: 100%;
+    padding: 10px;
+
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.header .container .img {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    height: 90%;
+}
+.header .container .img  img{
+   
+    height: inherit;
+    
+}
