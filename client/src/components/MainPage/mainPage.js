@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutInfo from './aboutInfo'
 import './mainPage.css'
 const MainPage = () => {
   return (
-    <div className= "mainpage">mainPageadsdasdasdssadad</div>
+    <div className= "mainpage">
+      <AboutInfo/>
+    </div>
   )
 }
 
