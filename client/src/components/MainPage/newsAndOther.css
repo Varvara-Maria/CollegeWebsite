@@ -1,12 +1,12 @@
 .news_and_others{
     background-color: white;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     display: flex;
 }
 .news_and_others .news{
     background-color: white;
-    width: 55%;
+    width: 60%;
     margin-left: 10%;
     padding:40px 0;
 }
@@ -44,7 +44,7 @@
 .news  .main_news_block{
     margin: 40px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 1fr;
     width: 100%;
     grid-gap: 30px;
 }
@@ -54,7 +54,7 @@
     flex-direction: column;
     width: 100%;
 }
-.first_news .image{
+.main_news_block .image{
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -62,7 +62,7 @@
     overflow: hidden;
     
 }
-.main_news_block .first_news .image img{
+.main_news_block  .image img{
     width: 100%;
     height: 100%;
     border-radius: 5px;
@@ -84,6 +84,8 @@
     width: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100%;
 }
 
 .main_news_block .info {
@@ -120,17 +122,58 @@
     grid-gap: 20px;
 }
 
+.other_news .intro_news img{
+    width: 100%;
+    height: 100%;
+}
 
+.other_news .intro_news .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.other_news .intro_news .info p{
+    font-size: 20px;
+}
 
 
 /*Quick links block*/
 
 
 .news_and_others .quickLink{
-    background-image: url("https://i.ibb.co/tX8h85x/2.png");
-    width: 45%;
+    background-image: url("https://i.ibb.co/bJJCW9F/2-1.png");
+    width: 40%;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    padding:40px 30px;
     padding-right: 10%;
-    padding:40px 0;
+}
+
+.news_and_others .quickLink .title h1{
+    color : white;
+}
+.news_and_others .quickLink .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.quickLink .title i{
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.quickLink .links{
+    display: flex;
+    flex-direction: column; 
+    list-style: none;  
+}
+.quickLink .links li{
+    color : #3db166;
+    font-size: 24px;
+    line-height: 19px;
+    font-weight: 600;
+    padding: 30px 0;
+    border-bottom: 1px solid #e6e6e6;
 }

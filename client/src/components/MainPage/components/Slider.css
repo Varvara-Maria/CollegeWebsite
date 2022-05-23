@@ -6,7 +6,9 @@
 .slider .element-slider img{
    width: 100%;
    
-   
+}
+.slick-slider:focus-visible{
+    outline: none;
 }
 
 .slider .element-slider .text-slider{
