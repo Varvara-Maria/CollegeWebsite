@@ -3,6 +3,7 @@ import {BrowserRouter} from 'react-router-dom'
 import { Route, Routes } from 'react-router';
 import MainPage from './components/MainPage/mainPage';
 import Header from './components/Shared/Header/Header';
+
 function App() {
   return (
     <div className="App">
