@@ -1,4 +1,5 @@
 .durector{
+    margin-top: 50px;
     width: 100%;
     height: 90vh;
     display: grid;
@@ -9,8 +10,67 @@
     flex-direction: column;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .info-durector .header-durector{
-    height: 25%;
+    height: 20%;
+    width: inherit;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+.info-durector .header-durector .element{
+   display: grid;
+   place-items: center;
+   height: fit-content;
+}
+.info-durector .header-durector .element .text p{
+    font-size:20px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+.info-durector .images-durector{
+    height: 80%;
+    width: 100%;
+    width: inherit;
+    display: flex;
+}
+
+.info-durector .images-durector img{
+    width: 100%;
+    object-fit: cover;
+    height: 143%;
+    
+}
+.info-durector .images-durector .img-durector{
+    width: 50%;
+    height: inherit;
+}
+.info-durector .images-durector .img-durector-info{
+    width: 50%;
+    height: inherit;
+    position: relative;
+}
+
+.img-durector-info .text{
+    text-align: justify;
+    margin: 60px;
+    position: absolute !important;
+    color:white;
+    text-indent: 20px;
+}
+.img-durector-info .text p{
+    font-size: 24px;
+
+    font-weight: 300;
+}
+.img-durector-info .text .cutata{
+     margin: 10% 0 0;
+    font-size: 20px;
+    font-style: italic;
+    text-align: right;
+    font-weight: 300;
 }
