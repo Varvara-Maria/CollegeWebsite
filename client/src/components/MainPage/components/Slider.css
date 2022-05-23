@@ -1,0 +1,46 @@
+.slider .element-slider{
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+.slider .element-slider img{
+   width: 100%;
+   
+   
+}
+
+.slider .element-slider .text-slider{
+    top:30%;
+    left:10%;
+    position: absolute;
+}
+
+.slider .element-slider .text-slider h4{
+    font-weight: 400;
+    font-size: 35px;
+    color:white;
+}
+.slider .element-slider .text-slider h5{
+    margin-top: 30px ;
+    padding: 10px ;
+    width: fit-content;
+    background: rgba(4, 4, 39, 0.7);
+    font-weight: 500;
+    font-size: 50px;
+    color:white;
+}
+.slider .element-slider .text-slider button{
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 20px;
+    background:white;
+   
+    color:rgb(34, 31, 31);
+    padding: 20px;
+    border:none;
+    border-left: 8px solid rgb(37, 179, 124);
+}
+
+.slider .element-slider .text-slider button:hover{
+    color:rgb(68, 41, 52);
+}
