@@ -1,0 +1,136 @@
+.news_and_others{
+    background-color: white;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+}
+.news_and_others .news{
+    background-color: white;
+    width: 55%;
+    margin-left: 10%;
+    padding:40px 0;
+}
+
+
+.news_and_others .container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    padding: 40px 0;
+}
+
+
+.news_and_others .news .title{
+    display: flex;
+    align-items: center;
+}
+.news .title h1{
+    color : #163269;
+}
+.news .title .line{
+    width: 80%;
+    height:3px;
+    background-color: #e6e6e6;
+    margin: 0 auto;
+}
+
+.news h3{
+    color: #3db166;
+    font-weight: 300;
+}
+
+.news  .main_news_block{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    grid-gap: 30px;
+}
+
+ .main_news_block .first_news{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.first_news .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border :0;
+    overflow: hidden;
+    
+}
+.main_news_block .first_news .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: transform .5s;
+}
+.image:hover{
+    background-color: black; 
+    transition:all .4s ease-in-out;
+}
+.image img:hover{
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+    opacity: 0.5;
+
+}
+
+
+.main_news_block .other_news{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main_news_block .info {
+    display: flex;
+    flex-direction: column;
+}
+.main_news_block .info .date{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.main_news_block .info .date h4{
+    color: #959595;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.main_news_block .info .news_name p{
+    font-size: 22px;
+    font-weight: 700;
+    color : #444444;
+    transition: color .5s;
+}
+.main_news_block .info .news_name p:hover{
+    cursor: pointer;
+    color : #3db166;
+    transition:all 0.5s ease-in;
+    -webkit-transition:all 0.5s ease-in;
+}
+
+.other_news .intro_news{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-gap: 20px;
+}
+
+
+
+
+/*Quick links block*/
+
+
+.news_and_others .quickLink{
+    background-image: url("https://i.ibb.co/tX8h85x/2.png");
+    width: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-right: 10%;
+    padding:40px 0;
+}
