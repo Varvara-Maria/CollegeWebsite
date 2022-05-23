@@ -3,6 +3,9 @@
     height: 90vh;
     overflow: hidden;
 }
+.slider{
+    overflow: hidden;
+}
 .slider .element-slider img{
    width: 100%;
    
