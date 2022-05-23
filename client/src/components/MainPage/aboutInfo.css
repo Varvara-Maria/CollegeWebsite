@@ -4,7 +4,10 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 40vh;
+
+
+    height: fit-content;
+
     background-attachment: fixed;
     padding: 50px 0;
 }
