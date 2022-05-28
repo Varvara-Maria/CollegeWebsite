@@ -3,6 +3,7 @@ import {BrowserRouter} from 'react-router-dom'
 import { Route, Routes } from 'react-router';
 import MainPage from './components/MainPage/mainPage';
 import Header from './components/Shared/Header/Header';
+import Footer from './components/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         
           <Route path ="/" exact element = {<MainPage/>}/>
         </Routes> 
-        
+      <Footer />
       </BrowserRouter>
 
     </div>
