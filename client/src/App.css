@@ -6,8 +6,12 @@
 .App{
   
  /* width: 100%;*/
-  overflow: hidden;
+ 
 }
 button{
   cursor: pointer;
+}
+
+a{
+  text-decoration: none;
 }
