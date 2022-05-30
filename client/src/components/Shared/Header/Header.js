@@ -15,7 +15,7 @@ function Header() {
                   <ul className = "topmenu">
                       <li>  <Link to="/">Головна</Link></li>
  
-                      <li><Link to="/history">Історія</Link>
+                      <li>Історія
                       <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
