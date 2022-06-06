@@ -6,35 +6,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Attribute/BsonCollectionAttribute.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Db/Document.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Db/IDocument.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/IRepositories/IMongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/IRepositories/INewsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Models/News.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Repositories/MongoRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/ViewModels/NewsViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/CollegeApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/CollegeApi.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/CollegeApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/CollegeApi.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/IRepositories/INewsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/IRepositories/INewsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/refint/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/refint/CollegeApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Shared/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Shared/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/Shared/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Shared/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +85,7 @@
       <updated>1653026963743</updated>
       <workItem from="1653026986643" duration="211000" />
       <workItem from="1654440953342" duration="695000" />
-      <workItem from="1654452328736" duration="5965000" />
+      <workItem from="1654452328736" duration="7317000" />
     </task>
     <servers />
   </component>

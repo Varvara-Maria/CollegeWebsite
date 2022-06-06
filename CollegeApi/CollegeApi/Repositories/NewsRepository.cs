@@ -41,8 +41,26 @@ public class NewsRepository : MongoRepository<News>, INewsRepository
 
     }
 
-    public News UpdateNews(News news)
+    public News UpdateNews(string id, NewsViewModel news)
     {
-        throw new NotImplementedException();
+        try
+        {
+            News upNews = new News()
+            {
+                Id = id,
+                Title = news.Title,
+                Description = news.Description,
+                Date = news.Date,
+                MainImage = news.MainImage,
+                PageInfo = news.PageInfo
+            };
+
+            ReplaceOne(upNews);
+            return upNews;
+        }
+        catch (Exception e)
+        {
+            throw new Exception("Not Update");
+        }
     }
 }

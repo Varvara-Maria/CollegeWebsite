@@ -28,4 +28,15 @@ public class NewsController : ControllerBase
         return Ok();
     }
 
+    [HttpGet("[action]/{id}")]
+    public IActionResult GetNewsById(string id)
+    {
+        return Ok(_newsRepository.FindById(id));
+    }
+
+    [HttpPost("[action]/{id}")]
+    public IActionResult UpdateNews(string id, NewsViewModel newsViewModel)
+    {
+        return Ok(_newsRepository.UpdateNews(id, newsViewModel));
+    }
 }

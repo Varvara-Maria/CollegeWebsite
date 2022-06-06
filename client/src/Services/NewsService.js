@@ -6,4 +6,6 @@ export default class NewsService{
 
     getAllNews = () => base_service.getElements("/News/GetAllNews")
 
+    getNewsById = (id) => base_service.getElements(`/News/GetNewsById/${id}`);
+
 }

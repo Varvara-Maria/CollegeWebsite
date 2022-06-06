@@ -10,5 +10,5 @@ public interface INewsRepository : IMongoRepository<News>
 
     void DeleteNews(string Id);
 
-    News UpdateNews(News news);
+    News UpdateNews(string id, NewsViewModel news);
 }

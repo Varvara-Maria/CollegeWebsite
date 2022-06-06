@@ -75,3 +75,8 @@
     top:40%;
     left:50%   
 }
+
+.editNews .container{
+    min-height: 50vh;
+
+}
