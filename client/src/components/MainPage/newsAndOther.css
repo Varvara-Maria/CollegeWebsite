@@ -68,11 +68,12 @@
     border-radius: 5px;
     transition: transform .5s;
 }
-.image:hover{
+
+.main_news_block .image:hover{
     background-color: black; 
     transition:all .4s ease-in-out;
 }
-.image img:hover{
+.main_news_block .image img:hover{
     transform: scale(1.2);
     transition: all .5s ease-in-out;
     opacity: 0.5;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Header() {
     
     return (
-        <div className="header">
+        <div className="header" id = "header">
         <div className="container">
             <div className="img">
                 <img src="https://i.ibb.co/j3ShSfG/main-1.png" alt="header" />
@@ -14,7 +14,6 @@ function Header() {
          <div className="menu">
                   <ul className = "topmenu">
                       <li>  <Link to="/">Головна</Link></li>
- 
                       <li><Link to="/history">Історія</Link>
                       <ul className="submenu">
                                 <li>Коледжу</li>
