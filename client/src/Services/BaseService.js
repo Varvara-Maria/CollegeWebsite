@@ -8,4 +8,8 @@ export default class BaseService{
     getElements = (uri) => {
         return axios.get(base_uri + uri);
     }
+
+    setElements = (uri, data) =>{
+        return axios.post(base_uri + uri, data);
+    }
 }

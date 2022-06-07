@@ -35,7 +35,7 @@ public class NewsController : ControllerBase
     }
 
     [HttpPost("[action]/{id}")]
-    public IActionResult UpdateNews(string id, NewsViewModel newsViewModel)
+    public IActionResult UpdateNews(string id,[FromBody] NewsViewModel newsViewModel)
     {
         return Ok(_newsRepository.UpdateNews(id, newsViewModel));
     }

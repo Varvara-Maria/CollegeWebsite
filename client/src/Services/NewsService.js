@@ -8,4 +8,5 @@ export default class NewsService{
 
     getNewsById = (id) => base_service.getElements(`/News/GetNewsById/${id}`);
 
-}
+    updateNews = (id, data) => base_service.setElements(`/News/UpdateNews/${id}`,data);
+}   

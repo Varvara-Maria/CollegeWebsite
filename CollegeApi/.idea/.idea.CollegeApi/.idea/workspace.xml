@@ -8,12 +8,8 @@
     <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/IRepositories/INewsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/IRepositories/INewsRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" afterDir="false" />
@@ -85,7 +81,7 @@
       <updated>1653026963743</updated>
       <workItem from="1653026986643" duration="211000" />
       <workItem from="1654440953342" duration="695000" />
-      <workItem from="1654452328736" duration="7317000" />
+      <workItem from="1654452328736" duration="8848000" />
     </task>
     <servers />
   </component>
@@ -150,6 +146,32 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="38" containingFunctionPresentation="method 'UpdateNews'">
+            <startOffsets>
+              <option value="961" />
+            </startOffsets>
+            <endOffsets>
+              <option value="962" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="39" containingFunctionPresentation="method 'UpdateNews'">
+            <startOffsets>
+              <option value="971" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1028" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

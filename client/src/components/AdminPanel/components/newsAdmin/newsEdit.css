@@ -76,7 +76,49 @@
     left:50%   
 }
 
+
+
+/*EditNewsPage*/
 .editNews .container{
     min-height: 50vh;
+}
+.editNews {
 
+}
+
+.editNews .title{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.editNews .title h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 400;
+    color: #1A3853;
+    margin-bottom: 10px;
+}
+.editNews .mainInformation{
+    
+}
+
+.editNews .mainInformation .line{
+    display: flex;
+    margin: 10px 0;
+    align-items: center; 
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 30px;
+
+}
+.mainInformation .line .imageUploadfield{
+    display: flex; 
+    flex-direction: column;
+
+}
+
+.mainInformation .line .imageUploadfield img{
+    width: 100%;
+    margin-bottom: 10px;
 }
