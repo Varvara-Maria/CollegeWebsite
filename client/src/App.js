@@ -4,16 +4,14 @@ import { Route, Routes } from 'react-router';
 import MainPage from './components/MainPage/mainPage';
 import Header from './components/Shared/Header/Header';
 import Footer from './components/Shared/Footer/Footer';
-<<<<<<< HEAD
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import React from 'react';
 import EditNewsItem from './components/AdminPanel/components/newsAdmin/EditNewsItem';
 import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
 import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
 import Page from './components/Shared/UniversalPage/Page';
-=======
 import History from './components/HistoryPage/History';
->>>>>>> development
+
 
 function App() {
   return (
