@@ -14,7 +14,7 @@ function Header() {
 
     useEffect(()=>{
         (async()=>{
-            const res = await axios.get("https://localhost:7202/api/Page/GetAllPages");
+            const res = await axios.get("https://collegeback.herokuapp.com/api/Page/GetAllPages");
             console.log(res);
             setSpeciality(res.data.filter(x=>x.section === "speciality"));
             setStudent(res.data.filter(x=>x.section === "student"));

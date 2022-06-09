@@ -1,5 +1,5 @@
 import axios from 'axios'
-const base_uri = "https://localhost:7202/api";
+const base_uri = "https://collegeback.herokuapp.com/api";
 
 
 export default class BaseService{
