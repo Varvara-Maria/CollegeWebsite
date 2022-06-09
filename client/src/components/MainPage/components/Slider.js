@@ -12,22 +12,23 @@ function Carousel() {
         autoplay: true,
         autoplaySpeed: 10000,
         infinite: true,
-        pauseOnHover:false,
+        pauseOnHover:true,
       }
     
   return (
     <div className="slider">
      <Slider  {...sliderSettings}> 
         <div className="element-slider">
-            <img src="/slider1.jpg" alt="" />
+            
+             <img src="/slider1.jpg" alt="" />
             <div className="text-slider">
                 <h4>Найкращий коледж у місті</h4>
                 <h5>Коледж ЧНУ ім. Юрія Федьковича</h5>
                  <button>Детальніше</button>
             </div>
         </div>
-        <div className="element-slider">
-            <img src="/book.jpeg" alt="" />
+        <div className="element-slider">    
+        <img src="/book.jpeg" alt="" />
             <div className="text-slider">
                 <h4>Найбільший вибір спеціальностей</h4>
                 <h5>Ми чекаємо на тебе!!!</h5>

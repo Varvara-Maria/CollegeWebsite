@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id = "footer">
         <div className="container">
             <div class='footer-info'>
                 <img src="https://i.ibb.co/HPGjHnN/main-1-removebg-preview.png" alt="" />

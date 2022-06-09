@@ -46,7 +46,7 @@ const Durector = () => {
                 </div>
                 <div className="images-durector">
                     <div className="img-durector">
-                        <img src="http://college-chnu.cv.ua/pages/MainPage/images/director.jpg" alt="" />
+                        <img src="/Durector2.jpg" alt="" />
                     </div>
                     <div className="img-durector-info">
                         <div className="text">

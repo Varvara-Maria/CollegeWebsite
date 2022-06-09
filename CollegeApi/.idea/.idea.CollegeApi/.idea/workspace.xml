@@ -5,11 +5,21 @@
     <projectFile profileName="IIS Express">CollegeApi/CollegeApi.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="" />
+    <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -68,6 +78,9 @@
       <option name="presentableId" value="Default" />
       <updated>1653026963743</updated>
       <workItem from="1653026986643" duration="211000" />
+      <workItem from="1654440953342" duration="695000" />
+      <workItem from="1654452328736" duration="8850000" />
+      <workItem from="1654686270092" duration="6265000" />
     </task>
     <servers />
   </component>
@@ -75,9 +88,104 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="26" containingFunctionPresentation="method 'CreateNews'">
+            <startOffsets>
+              <option value="627" />
+            </startOffsets>
+            <endOffsets>
+              <option value="669" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" initialLine="25" containingFunctionPresentation="method 'CreateNews'">
+            <startOffsets>
+              <option value="770" />
+            </startOffsets>
+            <endOffsets>
+              <option value="789" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs</url>
+          <line>18</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" initialLine="17" containingFunctionPresentation="method 'CreateNews'">
+            <startOffsets>
+              <option value="486" />
+            </startOffsets>
+            <endOffsets>
+              <option value="760" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
+          <line>38</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="38" containingFunctionPresentation="method 'UpdateNews'">
+            <startOffsets>
+              <option value="961" />
+            </startOffsets>
+            <endOffsets>
+              <option value="962" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
+          <line>39</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="39" containingFunctionPresentation="method 'UpdateNews'">
+            <startOffsets>
+              <option value="971" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1028" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs</url>
+          <line>48</line>
+          <properties documentPath="$PROJECT_DIR$/CollegeApi/Repositories/NewsRepository.cs" initialLine="50" containingFunctionPresentation="method 'UpdateNews'">
+            <startOffsets>
+              <option value="1148" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1170" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
