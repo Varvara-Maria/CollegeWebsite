@@ -1,0 +1,13 @@
+.page .container .title h1{
+    text-align: center;
+    color:#26B27C;
+    font-size: 40px;
+}
+
+.page .container .title {
+    margin: 20px 0;
+}
+
+.page .container .pageInfo{
+    margin: 40px 0;
+}

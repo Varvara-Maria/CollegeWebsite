@@ -10,6 +10,8 @@ const NewsList = () => {
   let newsService = new NewsService();
   const [loading, setLoading] = useState(true);
 
+
+
   useEffect(()=>{
     newsService.getAllNews().then((res)=>{
       console.log(res.data);

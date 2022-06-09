@@ -1,7 +1,7 @@
 import React from 'react'
 import './mainArea.css'
 import NewsAdmin from './newsAdmin/NewsAdmin';
-
+import PagesList from '../components/pagesEditor/pagesList'
 
 const MainArea = ({menuState}) => {
   return (
@@ -9,12 +9,13 @@ const MainArea = ({menuState}) => {
       <div className="adminContainer">
         {(function (){
           switch(menuState){
+            case 0 : return <p>{menuState}</p>
             case 1 : return (<p>{menuState}</p>);
-            case 2 : return (<p>{menuState}</p>);
-            case 3 : return (<p>{menuState}</p>);
-            case 4 : return (<p>{menuState}</p>);
-            case 5 : return (<p>{menuState}</p>);
-            case 6 : return (<p>{menuState}</p>);
+            case 2 : return <PagesList section ={"speciality"}/>;
+            case 3 : return <PagesList section ={"student"}/>;
+            case 4 : return <PagesList section ={"entrant"}/>;
+            case 5 : return <PagesList section ={"studparlament"}/>;
+            case 6 : return <PagesList section ={"omo"}/>;
             case 7 : return <NewsAdmin/>;
             default :
               return (<h1 style = {{textAlign:"center"}}>Виберіть елемент який хочете редагувати!</h1>);

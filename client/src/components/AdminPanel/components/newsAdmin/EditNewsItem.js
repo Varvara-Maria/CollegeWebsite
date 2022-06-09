@@ -71,7 +71,7 @@ const EditNewsItem = () => {
                         shrink: true,
                         }}
                         defaultValue = {news.date.slice(0,10)}
-                        onChange ={(e)=>setDate(e.target.value)}
+                        onChange ={(e)=>{console.log(e.target.value);setDate(e.target.value)}}
                     />
                 </div>
                 <div className="line">
@@ -81,7 +81,7 @@ const EditNewsItem = () => {
                         multiline
                         minRows ={15}
                         defaultValue = {news.description}
-                        onChange ={(e)=>setDescription(e.target.value)}
+                        onChange ={(e)=>{setDescription(e.target.value); }}
                     />
                     <div className="imageUploadfield">
                         <img src={news.mainImage} alt={news.title} />

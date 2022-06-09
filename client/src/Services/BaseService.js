@@ -12,4 +12,8 @@ export default class BaseService{
     setElements = (uri, data) =>{
         return axios.post(base_uri + uri, data);
     }
+
+    deleteElements = (uri) =>{
+        return axios.delete(base_uri + uri);
+    }
 }

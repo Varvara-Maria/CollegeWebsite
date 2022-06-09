@@ -7,6 +7,9 @@ import Footer from './components/Shared/Footer/Footer';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import React from 'react';
 import EditNewsItem from './components/AdminPanel/components/newsAdmin/EditNewsItem';
+import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
+import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
+import Page from './components/Shared/UniversalPage/Page';
 
 function App() {
   return (
@@ -16,8 +19,10 @@ function App() {
         <Routes>
           <Route path ="/" exact element = {<MainPage/>}/>
           <Route path ="/admin" exact element = {<React.Fragment><AdminPanel/></React.Fragment>}/>
-          <Route path ="/admin/newsEdit/:id" exact element = {<React.Fragment><EditNewsItem/></React.Fragment>}/>
-
+          <Route path ="/admin/newsEdit/:section/:id" exact element = {<React.Fragment><EditNewsItem/></React.Fragment>}/>
+          <Route path = "/admin/createNewPage/:section" exact element = {<React.Fragment><PageEditor/></React.Fragment>}/>
+          <Route path = "/admin/editPage/:section/:id" exact element ={<React.Fragment><PageEditor/></React.Fragment>}/>
+          <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
         </Routes> 
         <Footer />
       </BrowserRouter>

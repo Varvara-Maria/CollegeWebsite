@@ -30,7 +30,7 @@ builder.Services.AddSingleton<IMongoClient, MongoClient>(s =>
 
 builder.Services.AddScoped(typeof(IMongoRepository<>), typeof(MongoRepository<>));
 builder.Services.AddScoped<INewsRepository, NewsRepository>();
-
+builder.Services.AddScoped<IPagesRepository, PageRepository>();
 
 #endregion
 

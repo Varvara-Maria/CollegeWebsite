@@ -15,6 +15,7 @@ public class NewsRepository : MongoRepository<News>, INewsRepository
 
     public News CreateNews(NewsViewModel newsViewModel)
     {
+        newsViewModel.Date = newsViewModel.Date.AddHours(4);
         News newNews = new News()
         {
             Title = newsViewModel.Title,
@@ -45,6 +46,7 @@ public class NewsRepository : MongoRepository<News>, INewsRepository
     {
         try
         {
+            news.Date = news.Date.AddHours(4);
             News upNews = new News()
             {
                 Id = id,
