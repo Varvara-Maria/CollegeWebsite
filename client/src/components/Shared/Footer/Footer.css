@@ -7,14 +7,14 @@
     line-height: 35px;
 }
 
-li {
+.footer li {
     list-style: none;
     color: #8f979b;
     cursor: pointer;
     transition: color .5s ease-out;
 }
 
-li:hover {
+.footer li:hover {
     color: white;
 }
 
@@ -39,7 +39,7 @@ li:hover {
     line-height: 28px;
 }
 
-hr {
+.footer hr {
     margin: 20px 0;
 	padding: 0;
 	height: 0;

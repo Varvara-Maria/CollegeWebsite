@@ -30,7 +30,8 @@ function Header() {
          <div className="menu">
                   <ul className = "topmenu">
                       <li>  <Link to="/">Головна</Link></li>
-                      <li><Link to="/history">Історія</Link>
+ 
+                      <li><Link to = "history">Історія</Link>
                       <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
