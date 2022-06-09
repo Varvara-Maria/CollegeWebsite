@@ -18,7 +18,7 @@ const Page = () => {
             setPage(res.data);
             setLoading(false);
         })
-    },[])
+    },[id])
     
 
   return loading ? <FadeLoader/> :
@@ -27,6 +27,7 @@ const Page = () => {
           <div className="title">
             <h1>{page.title}</h1>
           </div>
+          
           <div className="pageInfo" dangerouslySetInnerHTML={{ __html: page.pageInfo }} ></div>
       </div>
     </div>

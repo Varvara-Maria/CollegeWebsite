@@ -52,7 +52,7 @@ public class PageController : ControllerBase
         return Ok(_pagesRepository.CreatePage(pageViewModel));
     }
 
-    [HttpPost("[action]")]
+    [HttpGet("[action]")]
     public IActionResult GetAllPages()
     {
         return Ok(_pagesRepository.FilterBy(x => true).ToList());

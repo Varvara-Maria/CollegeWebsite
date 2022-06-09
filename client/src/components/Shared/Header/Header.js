@@ -1,10 +1,26 @@
 import './Header.css'
 import React,{ useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import PageService from "../../../Services/PageService"
+import axios from 'axios';
+import { BeatLoader } from 'react-spinners';
 
 function Header() {
-    
+    let pageService = new PageService(); 
+    const [speciality, setSpeciality] = useState([]);
+    const [student, setStudent]= useState([]);
+    const [entrant,setEntrant] =useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        (async()=>{
+            const res = await axios.get("https://localhost:7202/api/Page/GetAllPages");
+            console.log(res);
+            setSpeciality(res.data.filter(x=>x.section === "speciality"));
+            setStudent(res.data.filter(x=>x.section === "student"));
+            setEntrant(res.data.filter(x=>x.section === "entrant"));
+        })()  
+    },[])
     return (
         <div className="header" id = "header">
         <div className="container">
@@ -20,44 +36,38 @@ function Header() {
                                 <li>Університету</li>
                             </ul></li>
                       
-                      <li><Link to="/gfdg">Спеціальності</Link>
+                      <li><Link to = "/">Спеціальності</Link>
                              <ul className="submenu">
-                                <li>Право</li>
+                                {
+                                    speciality?.map((item, index)=>
+                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    )
+                                }
+                                {/* <li>Право</li>
                                 <li>Підприємство, торг та БД.</li>
                                 <li>Фінанси, БС та страхування</li>
                                 <li>Облік і оподаткування</li>
                                 <li>Прикладна математика</li>
                                 <li>Комп`ютерні науки</li>
-                                <li>Комп`ютерна інженерія</li>
+                                <li>Комп`ютерна інженерія</li> */}
                             </ul>
                         </li>
                       <li><Link to="/gfdg">Студенту</Link>
                           <ul className="submenu">
-                                <li>Розклад дзвінків</li>
-                                <li>Реквізити для оплати</li>
-                                <li>Курсова робота</li>
-                                <li>Допомога у пошуку роботи</li>
-                                <li>Стипендії</li>
-                                <li>Електронні підручники</li>
-                                <li>Силабуси дисциплін</li>
-                                <li>Оплата (on-line)</li>
-                                <li>Гуртожиток</li>
+                                {
+                                    student?.map((item, index)=>
+                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    )
+                                }
                             </ul>
                           </li>
                         <li><Link to="/gfdg">Абітурієнту</Link>
                             <ul className="submenu">
-                                <li>Підготовчі курси</li>
-                                <li>Програма підготовки</li>
-                                <li>Інформаціний пакет</li>
-                                <li>Правила прийому</li>
-                                <li>Додаткові бали</li>
-                                <li>Рейтингові списки(БЗСО)</li>
-                                <li>Рейтингові списки(ПЗСО)</li>
-                                <li>Накази про зарахування</li>
-                                <li>Вартість навчання</li>
-                                <li>Державне замовлення</li>
-                                <li>Мотиваційний лист</li>
-                                
+                                {
+                                    entrant?.map((item, index)=>
+                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    )
+                                }
                             </ul>
                         </li>
                       <li><Link to="/">Адміністрація</Link></li>

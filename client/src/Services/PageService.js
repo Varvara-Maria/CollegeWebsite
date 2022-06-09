@@ -14,4 +14,5 @@ export default class PageService{
 
     createPage = (data) => base_service.setElements("/Page/CreatePage",data);
 
+    getAllPages = async () => await base_service.getElements('/Page/GetAllPages');
 }
