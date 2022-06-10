@@ -11,3 +11,18 @@
 .page .container .pageInfo{
     margin: 40px 0;
 }
+.page .universal-page-container{
+    width: 100%;
+    height: 100%;
+   
+   display: grid;
+   grid-template-columns:  25% 70%;
+   grid-gap: 5%;
+}
+
+.scroll-sidebar{
+    position: relative;
+}
+.page .pageInfo img{
+    max-width: 100%;
+}
