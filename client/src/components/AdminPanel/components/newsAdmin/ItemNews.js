@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './newsEdit.css'
 import { Button } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
+import SimpleModal from '../../SharedForAdmin/simpleModal'
 const ItemNews = ({item}) => {
     let navigate = useNavigate();
+    const [openModal, setOpenModal] = useState(true);
+    
   return (
     <div className = "newsItem">
         <h2>{item.title}</h2>
@@ -17,10 +20,14 @@ const ItemNews = ({item}) => {
         </div>
         <div className="crud_buttons">
             <Button color="secondary" onClick = {()=>navigate(`/admin/newsEdit/${item.id}`)}>Редагувати</Button>
-            <Button variant="outlined" color="error">
+            <Button variant="outlined" color="error" onClick = {()=>setOpenModal(true)}>
                 Видалити новину
             </Button>
         </div>
+        {
+            openModal ? <SimpleModal handleClose = {setOpenModal(false)} handleSubmit={setOpenModal(false)}/>
+            : <></>
+        }
     </div>
   )
 }
