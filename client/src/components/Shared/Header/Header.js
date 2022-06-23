@@ -1,6 +1,6 @@
 import './Header.css'
 import React,{ useEffect,useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import PageService from "../../../Services/PageService"
 import axios from 'axios';
 import { BeatLoader } from 'react-spinners';
@@ -29,15 +29,15 @@ function Header() {
             </div>
          <div className="menu">
                   <ul className = "topmenu">
-                      <li>  <Link to="/">Головна</Link></li>
+                      <li> <NavLink activeClassName="active" to="/">Головна</NavLink></li>
  
-                      <li><Link to = "history">Історія</Link>
+                      <li><NavLink activeClassName="active" to = "history">Історія</NavLink>
                       <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
                             </ul></li>
                       
-                      <li><Link to = "/">Спеціальності</Link>
+                      <li><NavLink activeClassName="active" to = "/hfghf">Спеціальності</NavLink>
                              <ul className="submenu">
                                 {
                                     speciality?.map((item, index)=>
@@ -46,7 +46,7 @@ function Header() {
                                 }
                             </ul>
                         </li>
-                      <li><Link to="/gfdg">Студенту</Link>
+                      <li><NavLink activeClassName="active" to="/gfdg">Студенту</NavLink>
                           <ul className="submenu">
                                 {
                                     student?.map((item, index)=>
@@ -55,7 +55,7 @@ function Header() {
                                 }
                             </ul>
                           </li>
-                        <li><Link to="/gfdg">Абітурієнту</Link>
+                        <li><NavLink activeClassName="active" to="/gfdgggg">Абітурієнту</NavLink>
                             <ul className="submenu">
                                 {
                                     entrant?.map((item, index)=>
@@ -64,7 +64,7 @@ function Header() {
                                 }
                             </ul>
                         </li>
-                      <li><Link to="/">Адміністрація</Link></li>
+                      <li><NavLink activeClassName="active" to="/hfghfgh">Адміністрація</NavLink></li>
                       
                   </ul>
               </div>
