@@ -10,7 +10,6 @@ import EditNewsItem from './components/AdminPanel/components/newsAdmin/EditNewsI
 import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
 import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
 import Page from './components/Shared/UniversalPage/Page';
-
 import History from './components/HistoryPage/History';
 
 
