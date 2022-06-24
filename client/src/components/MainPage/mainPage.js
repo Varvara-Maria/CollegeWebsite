@@ -6,14 +6,16 @@ import Durector from './components/Durector'
 
 import NewsAndOther from './newsAndOther'
 import Courses from './components/Courses'
+import Location from './components/Location'
 
 const MainPage = () => {
   return (
     <div className= "mainpage">
       <Carousel/>
       <Durector/>
-      <Courses />
       <AboutInfo/>
+      <Courses />
+      <Location/>
       <NewsAndOther/>
     </div>
   )

@@ -50,7 +50,7 @@ function Header() {
                           <ul className="submenu">
                                 {
                                     student?.map((item, index)=>
-                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
                             </ul>
@@ -59,7 +59,7 @@ function Header() {
                             <ul className="submenu">
                                 {
                                     entrant?.map((item, index)=>
-                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                        <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
                             </ul>

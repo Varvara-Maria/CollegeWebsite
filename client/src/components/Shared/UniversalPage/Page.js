@@ -13,27 +13,29 @@ const Page = () => {
 
 
     useEffect(()=>{
-        pageService.getPageById(id).then((res)=>{
-            console.log(res);
-            setPage(res.data);
-            setLoading(false);
-        })
+      (async ()=>{
+        const res = await pageService.getPageById(id);
+        setPage(res.data);
+        console.log(res);
+        setLoading(false);
+      })()
+        
     },[id])
     
+    
 
-  return loading ? <FadeLoader/> :
-    <div className ="page">
+  return <div className ="page">
       <div className = "container">
           <div className="title">
             <h1>{page.title}</h1>
           </div>
-          <div className="universal-page-container">
-            <div className="scroll-sidebar">
+          {/* <div className="universal-page-container"> */}
+            {/* <div className="scroll-sidebar">
               <SideBar/>
             </div>
-              
+               */}
             <div className="pageInfo" dangerouslySetInnerHTML={{ __html: page.pageInfo }} ></div>
-          </div>
+          {/* </div> */}
           
       </div>
     </div>

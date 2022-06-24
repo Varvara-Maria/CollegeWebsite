@@ -18,7 +18,9 @@ public class NewsController : ControllerBase
     [HttpGet("[action]")]
     public IActionResult GetAllNews()
     {
-        return Ok(_newsRepository.FilterBy(x => true));
+        var res = _newsRepository.FilterBy(x => true).ToList();
+        res.Sort((x,y)=>y.Date.CompareTo(x.Date));
+        return Ok(res);
     }
 
     [HttpPost("[action]")]

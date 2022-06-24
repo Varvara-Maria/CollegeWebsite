@@ -7,8 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/src/components/MainPage/newsAndOther.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/MainPage/newsAndOther.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/pagesEditor/PageEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/pagesEditor/PageEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/MainPage/mainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/MainPage/mainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Shared/UniversalPage/Page.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Shared/UniversalPage/Page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Shared/UniversalPage/page.css" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Shared/UniversalPage/page.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +85,7 @@
       <workItem from="1654440953342" duration="695000" />
       <workItem from="1654452328736" duration="8850000" />
       <workItem from="1654686270092" duration="6265000" />
-      <workItem from="1655967980893" duration="1593000" />
+      <workItem from="1655967980893" duration="2208000" />
     </task>
     <servers />
   </component>
@@ -112,13 +114,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>26</line>
+          <line>28</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="26" containingFunctionPresentation="method 'CreateNews'">
             <startOffsets>
-              <option value="627" />
+              <option value="710" />
             </startOffsets>
             <endOffsets>
-              <option value="669" />
+              <option value="752" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
@@ -151,26 +153,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>38</line>
+          <line>40</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="38" containingFunctionPresentation="method 'UpdateNews'">
             <startOffsets>
-              <option value="961" />
+              <option value="1044" />
             </startOffsets>
             <endOffsets>
-              <option value="962" />
+              <option value="1045" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>39</line>
+          <line>41</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="39" containingFunctionPresentation="method 'UpdateNews'">
             <startOffsets>
-              <option value="971" />
+              <option value="1054" />
             </startOffsets>
             <endOffsets>
-              <option value="1028" />
+              <option value="1111" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

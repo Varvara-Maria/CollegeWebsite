@@ -65,7 +65,7 @@ a{
     width: 100%;
     height: inherit;
     display: grid;
-    place-content: center;
+    place-content: end;
 }
 .header .menu ul{
     height: inherit;
@@ -111,12 +111,17 @@ a{
     color:rgb(233, 224, 224);
     background: #496a86;
 }.header .menu .submenu li{
-    display: grid;
+    display: block !important;
     place-items: start;
     width: 100%;
     padding: 10px;
 
 }
+
+.menu .submenu a{
+    display: block;
+}
+
 .header .container{
     display: flex;
     justify-content: space-between;

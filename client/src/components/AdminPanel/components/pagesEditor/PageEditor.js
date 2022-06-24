@@ -7,6 +7,7 @@ import { FadeLoader } from 'react-spinners';
 import { TextField, Select, MenuItem, InputLabel, Button } from '@mui/material';
 import { hideFooterAndHeader } from '../../../../Services/Helpers';
 
+
 const PageEditor = () => {
   const {id} = useParams();
   const {section} = useParams();
@@ -14,7 +15,7 @@ const PageEditor = () => {
   const [page, setPage] = useState({});
   const[loading, setLoading] = useState(true);
   const [sectionField, setSection]= useState(section);
-  const [title, setTitle] = useState(page.title);
+  const [title, setTitle] = useState(page?.title);
   const [pageInfo, setPageInfo] = useState("");
   let navigate = useNavigate();
 
@@ -23,11 +24,14 @@ const PageEditor = () => {
     console.log(section);
     hideFooterAndHeader();
     if(id !== undefined){
-      pageService.getPageById(id).then((res)=>{
-        console.log(res);
+      (async ()=>{
+        const res = await pageService.getPageById(id);
         setPage(res.data);
+        console.log(res);
+        setTitle(res?.data?.title);
         setLoading(false);
-      })
+      })()
+      
     }else setLoading(false);
     
   },[])
@@ -43,7 +47,7 @@ const PageEditor = () => {
     pageService.createPage(data).then((res)=>{
       console.log(res);
       if(res.status === 200){
-        navigate(`/${section}/${res.data.id}`); 
+        window.location = (`/${section}/${res.data.id}`); 
       }else {
         alert("Щось пішло не так :( ");
       }
@@ -58,10 +62,11 @@ const PageEditor = () => {
       pageInfo : pageInfo,
       section : sectionField
     }
+    console.log(data)
     pageService.updatePage(id,data).then((res)=>{
       console.log(res);
       if(res.status === 200){
-        navigate(`/${section}/${id}`); 
+        window.location = (`/${section}/${id}`); 
       }else {
         alert("Щось пішло не так :( ");
       }
