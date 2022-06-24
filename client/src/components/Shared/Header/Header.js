@@ -32,10 +32,11 @@ function Header() {
                       <li>  <Link to="/">Головна</Link></li>
  
                       <li><Link to = "history">Історія</Link>
-                      <ul className="submenu">
+                        <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
-                            </ul></li>
+                        </ul>
+                      </li>
                       
                       <li><Link to = "/">Спеціальності</Link>
                              <ul className="submenu">
@@ -71,7 +72,7 @@ function Header() {
                                 }
                             </ul>
                         </li>
-                      <li><Link to="/">Адміністрація</Link></li>
+                      <li><Link to="administration">Адміністрація</Link></li>
                       
                   </ul>
               </div>
