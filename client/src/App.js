@@ -11,6 +11,7 @@ import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
 import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
 import Page from './components/Shared/UniversalPage/Page';
 import History from './components/HistoryPage/History';
+import LinksOther from './components/Shared/LinksOther/LinksOther';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
           <Route path ="/history" exact element = {<History />}/>
         </Routes> 
+        <LinksOther/>
         <Footer />
       </BrowserRouter>
     </div>
