@@ -30,12 +30,12 @@ function Header() {
          <div className="menu">
                   <ul className = "topmenu">
                       <li> <NavLink activeClassName="active" to="/">Головна</NavLink></li>
- 
                       <li><NavLink activeClassName="active" to = "history">Історія</NavLink>
                       <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
-                            </ul></li>
+                        </ul>
+                      </li>
                       
                       <li><NavLink activeClassName="active" to = "/hfghf">Спеціальності</NavLink>
                              <ul className="submenu">
@@ -64,7 +64,7 @@ function Header() {
                                 }
                             </ul>
                         </li>
-                      <li><NavLink activeClassName="active" to="/hfghfgh">Адміністрація</NavLink></li>
+                     <li><NavLink activeClassName="active" to="/administration">Адміністрація</NavLink></li>
                       
                   </ul>
               </div>
