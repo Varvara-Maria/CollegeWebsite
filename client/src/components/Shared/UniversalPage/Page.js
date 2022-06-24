@@ -4,7 +4,7 @@ import { FadeLoader } from 'react-spinners';
 import PageService from '../../../Services/PageService';
 import './page.css'
 
-
+import SideBar from './SideBar';
 const Page = () => {
     const {id} = useParams();
     const [page, setPage] = useState({});
@@ -27,8 +27,14 @@ const Page = () => {
           <div className="title">
             <h1>{page.title}</h1>
           </div>
+          <div className="universal-page-container">
+            <div className="scroll-sidebar">
+              <SideBar/>
+            </div>
+              
+            <div className="pageInfo" dangerouslySetInnerHTML={{ __html: page.pageInfo }} ></div>
+          </div>
           
-          <div className="pageInfo" dangerouslySetInnerHTML={{ __html: page.pageInfo }} ></div>
       </div>
     </div>
 }

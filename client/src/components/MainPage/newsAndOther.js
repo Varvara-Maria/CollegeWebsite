@@ -1,7 +1,22 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './newsAndOther.css'
 import { Link } from 'react-router-dom'
+import NewsService from '../../Services/NewsService';
+import { ParseDate } from '../../Services/Helpers';
+
 const NewsAndOther = () => {
+    const service = new NewsService();
+    const [news, setNews] = useState([]);
+    useEffect(() => {
+        (async ()=>{
+            const res  = await service.getAllNews();
+            console.log(res.data);
+            setNews(res.data);
+        })()
+      
+     
+    }, [])
+    
   return (
     <div className ="news_and_others">  
         <div className="news">
@@ -12,53 +27,53 @@ const NewsAndOther = () => {
            <div className="main_news_block">
                 <div className="first_news">
                     <div className="image">
-                        <img src="http://college-chnu.cv.ua/pages/files/ec7a1dea57b3/peremoga0905.jpg" alt="" />
+                        <img src={news[0]?.mainImage} alt={news[0]?.title} />
                     </div>
                     <div className="info">
                         <div className="date">
-                            <h4>JUNE 12, 2022</h4>
+                            <h4>{ParseDate(news[0]?.date)}</h4>
                         </div>
                         <div className="news_name">
-                            <p>9 травня Україна відзначає День перемоги над нацизмом у Другій світовій війні.</p>
+                            <p>{news[0]?.title}</p>
                         </div>
                     </div>
                 </div>
                 <div className="other_news">
                     <div className="intro_news">
                         <div className="image">
-                            <img src="http://college-chnu.cv.ua/pages/files/bebd1b5643da/velykden%20rector.jpg" alt="" />
+                            <img src={news[1]?.mainImage} alt={news[1]?.title} />
 
                         </div>
                         <div className="info">
                             <div className="date">
-                                <h4>MARCH 29,  2022</h4>
+                                <h4>{ParseDate(news[1]?.date)}</h4>
                             </div>
                             <div className="news_name">
-                                <p>Привітання з Великоднем від ректора Романа Петришина</p>
+                                <p>{news[1]?.title}</p>
                             </div>
                         </div>
                     </div>
                     <div className="intro_news">
                         <div className="image">
-                            <img src="http://college-chnu.cv.ua/pages/files/b4423493458f/001.jpg" alt="" />
+                            <img src={news[2]?.mainImage} alt={news[2]?.title}/>
                         </div>
                         <div className="info">
-                            <div className="date"><h4>MAY 26, 2022</h4></div>
+                            <div className="date"><h4>{ParseDate(news[2]?.date)}</h4></div>
                             <div className="news_name">
-                                <p>Чорною плямою на нашій планеті стала Чорнобильська катастрофа.</p>
+                                <p>{news[2]?.title}</p>
                             </div>
                         </div>
                     </div>
                     <div className="intro_news">
                         <div className="image">
-                            <img src="http://college-chnu.cv.ua/pages/files/3a94c33dfd18/%D0%B7%D0%B0%D0%B2%D0%B0%D0%BD%D1%82%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F.jpg" alt="" />
+                            <img src={news[3]?.mainImage} alt={news[3]?.title}/>
                         </div>
                         <div className="info">
                             <div className="date">
-                                <h4>MAY 8, 2022</h4>
+                                <h4>{ParseDate(news[3]?.date)}</h4>
                             </div>
                             <div className="news_name">
-                                <p><Link to ="/">8 травня - День пам'яті та примирення.</Link></p>
+                                <p><Link to ="/">{news[3]?.title}</Link></p>
                             </div>
                         </div>
                     </div>

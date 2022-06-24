@@ -39,4 +39,11 @@ public class NewsController : ControllerBase
     {
         return Ok(_newsRepository.UpdateNews(id, newsViewModel));
     }
+
+    [HttpDelete("[action]/{id}")]
+    public IActionResult DeleteNews(string id)
+    {
+        _newsRepository.DeleteNews(id);
+        return Ok();
+    }
 }
