@@ -36,6 +36,7 @@
     width: 100%;
     display: grid;
     place-items: center;
+    margin-bottom: 40px;
 }
 .allnews .MuiPagination-root ul{
     width: fit-content;
@@ -64,5 +65,5 @@
     font-style: italic;
     align-self: flex-end;
     margin-bottom: 15px;
-    margin-right: 20px;
+    margin-right: 30px;
 }

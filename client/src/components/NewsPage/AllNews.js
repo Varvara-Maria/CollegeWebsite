@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./AllNews.css"
 import NewsService from "../../Services/NewsService";
 import Pagination from '@mui/material/Pagination';
+import { ParseDate } from '../../Services/Helpers';
 
 function AllNews() {
 
@@ -44,7 +45,7 @@ function AllNews() {
                         <h3>{item.title}</h3>
                          <p>{item.description}</p>
                          <a href="/рпарапрпа">Детальніше</a>
-                         <p className="date-image">{item.date}</p>
+                         <p className="date-image">{ParseDate(item.date)}</p>
                     </div>
 
                  </div>
