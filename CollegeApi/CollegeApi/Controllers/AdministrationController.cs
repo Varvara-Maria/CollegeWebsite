@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CollegeApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class AdministrationController : ControllerBase
 {
     private readonly IAdministrationService _administrationService;
