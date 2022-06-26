@@ -17,8 +17,9 @@ function Administration() {
         })()
         
     },[])
-  return administration?.map((item) => <div className='administration'>
-      <div className='container'>
+  return  <div className='administration'>
+  {
+  administration?.map((item) => <div className='container'>
           <div className='administration-info'>
               <img src= {item.image} alt = {item.pib}/>
               <div className='administration-text'>
@@ -32,8 +33,10 @@ function Administration() {
               </div>
           </div>
       </div>
-  </div>
-        )
+  
+  )
+}
+    </div>
 }
 
 export default Administration
