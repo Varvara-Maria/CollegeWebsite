@@ -32,12 +32,7 @@ const LinksOther = () => {
             </div>
             
            {subblock ?
-           <TransitionGroup
-           transitionName="example"
-            transitionAppear={true}
-            transitionAppearTimeout={500}
-            transitionEnter={false}
-            transitionLeave={false}>
+
            <div className= "subblock">
                <Slider {...settings}>
                    <div className="elem-slick">
@@ -52,7 +47,7 @@ const LinksOther = () => {
                </Slider>
 
                
-            </div>  </TransitionGroup> : <></>}
+            </div>  : <></>}
            
             
             

@@ -16,7 +16,7 @@ const NewsList = () => {
     newsService.getAllNews().then((res)=>{
       console.log(res.data);
       setNews(res.data);
-      setLoading(false);
+      console.log(res.data)
     })
   },[])
 

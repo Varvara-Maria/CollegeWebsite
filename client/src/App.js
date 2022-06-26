@@ -12,7 +12,7 @@ import PageEditor from './components/AdminPanel/components/pagesEditor/PageEdito
 import Page from './components/Shared/UniversalPage/Page';
 import History from './components/HistoryPage/History';
 import LinksOther from './components/Shared/LinksOther/LinksOther';
-
+import AllNews from './components/NewsPage/AllNews';
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
           <Route path = "/admin/editPage/:section/:id" exact element ={<React.Fragment><PageEditor/></React.Fragment>}/>
           <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
           <Route path ="/history" exact element = {<History />}/>
+          <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
         </Routes> 
         <LinksOther/>
         <Footer />
