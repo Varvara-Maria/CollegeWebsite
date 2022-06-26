@@ -29,13 +29,11 @@ const Page = () => {
           <div className="title">
             <h1>{page.title}</h1>
           </div>
-          {/* <div className="universal-page-container"> */}
-            {/* <div className="scroll-sidebar">
-              <SideBar/>
+          
+            <div className="pageInfo"  >
+            <div class="fr-view" dangerouslySetInnerHTML={{ __html: page.pageInfo }}></div>
+            
             </div>
-               */}
-            <div className="pageInfo" dangerouslySetInnerHTML={{ __html: page.pageInfo }} ></div>
-          {/* </div> */}
           
       </div>
     </div>
