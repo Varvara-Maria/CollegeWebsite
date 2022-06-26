@@ -42,4 +42,10 @@ public class AdministrationController : ControllerBase
         return Ok();
     }
 
+    [HttpGet("[action]/{id}")]
+    public IActionResult GetPersonById(string id)
+    {
+        return Ok(_administrationService.FindById(id));
+    }
+
 }

@@ -12,6 +12,7 @@ import PageEditor from './components/AdminPanel/components/pagesEditor/PageEdito
 import Page from './components/Shared/UniversalPage/Page';
 import History from './components/HistoryPage/History';
 import AdministrationPage from './components/Administration/AdministrationPage';
+import PersonEditor from './components/AdminPanel/components/personEditor/personEditor';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
           <Route path ="/history" exact element = {<History />}/>
           <Route path ="/administration" exact element = {<AdministrationPage />}/>
+          <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
         </Routes> 
         <Footer />
       </BrowserRouter>

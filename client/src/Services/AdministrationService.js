@@ -12,4 +12,5 @@ export default class AdministrationService{
 
     deletePerson = (id) => base_service.deleteElements(`/Administration/DeletePerson/${id}`);
 
+    getPersonById  = (id) => base_service.getElements(`/Administration/GetPersonById/${id}`);
 }
