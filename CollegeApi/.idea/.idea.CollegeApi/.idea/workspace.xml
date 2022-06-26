@@ -81,6 +81,7 @@
       <workItem from="1654440953342" duration="695000" />
       <workItem from="1654452328736" duration="8850000" />
       <workItem from="1654686270092" duration="6265000" />
+      <workItem from="1655967980893" duration="5244000" />
     </task>
     <servers />
   </component>
@@ -109,13 +110,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>26</line>
+          <line>28</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="26" containingFunctionPresentation="method 'CreateNews'">
             <startOffsets>
-              <option value="627" />
+              <option value="710" />
             </startOffsets>
             <endOffsets>
-              <option value="669" />
+              <option value="752" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
@@ -148,26 +149,26 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>38</line>
+          <line>40</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="38" containingFunctionPresentation="method 'UpdateNews'">
             <startOffsets>
-              <option value="961" />
+              <option value="1044" />
             </startOffsets>
             <endOffsets>
-              <option value="962" />
+              <option value="1045" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs</url>
-          <line>39</line>
+          <line>41</line>
           <properties documentPath="$PROJECT_DIR$/CollegeApi/Controllers/NewsController.cs" initialLine="39" containingFunctionPresentation="method 'UpdateNews'">
             <startOffsets>
-              <option value="971" />
+              <option value="1054" />
             </startOffsets>
             <endOffsets>
-              <option value="1028" />
+              <option value="1111" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />

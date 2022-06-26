@@ -8,7 +8,7 @@
 }
 
 .history-block .history-begining {
-    width: 750px;
+    width: 90%;
 }
 
 .history-block .history-begining p {
@@ -23,6 +23,7 @@
 
 .history-block .history-begining img {
     margin-top: 30px;
+    width: 100%;
 }
 
 .history-block .history-director {

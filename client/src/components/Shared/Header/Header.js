@@ -30,12 +30,12 @@ function Header() {
          <div className="menu">
                   <ul className = "topmenu">
                       <li> <NavLink activeClassName="active" to="/">Головна</NavLink></li>
- 
                       <li><NavLink activeClassName="active" to = "history">Історія</NavLink>
                       <ul className="submenu">
                                 <li>Коледжу</li>
                                 <li>Університету</li>
-                            </ul></li>
+                        </ul>
+                      </li>
                       
                       <li><NavLink activeClassName="active" to = "/hfghf">Спеціальності</NavLink>
                              <ul className="submenu">
@@ -44,20 +44,13 @@ function Header() {
                                         <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
                                     )
                                 }
-                                {/* <li>Право</li>
-                                <li>Підприємство, торг та БД.</li>
-                                <li>Фінанси, БС та страхування</li>
-                                <li>Облік і оподаткування</li>
-                                <li>Прикладна математика</li>
-                                <li>Комп`ютерні науки</li>
-                                <li>Комп`ютерна інженерія</li> */}
                             </ul>
                         </li>
                       <li><NavLink activeClassName="active" to="/gfdg">Студенту</NavLink>
                           <ul className="submenu">
                                 {
                                     student?.map((item, index)=>
-                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
                             </ul>
@@ -66,12 +59,12 @@ function Header() {
                             <ul className="submenu">
                                 {
                                     entrant?.map((item, index)=>
-                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                        <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
                             </ul>
                         </li>
-                      <li><NavLink activeClassName="active" to="/hfghfgh">Адміністрація</NavLink></li>
+                     <li><NavLink activeClassName="active" to="/administration">Адміністрація</NavLink></li>
                       
                   </ul>
               </div>

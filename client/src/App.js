@@ -11,8 +11,13 @@ import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
 import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
 import Page from './components/Shared/UniversalPage/Page';
 import History from './components/HistoryPage/History';
+
 import LinksOther from './components/Shared/LinksOther/LinksOther';
 import AllNews from './components/NewsPage/AllNews';
+
+import AdministrationPage from './components/Administration/AdministrationPage';
+
+
 
 function App() {
   return (
@@ -27,7 +32,11 @@ function App() {
           <Route path = "/admin/editPage/:section/:id" exact element ={<React.Fragment><PageEditor/></React.Fragment>}/>
           <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
           <Route path ="/history" exact element = {<History />}/>
+
           <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
+
+          <Route path ="/administration" exact element = {<AdministrationPage />}/>
+
         </Routes> 
         <LinksOther/>
         <Footer />

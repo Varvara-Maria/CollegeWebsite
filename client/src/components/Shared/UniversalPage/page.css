@@ -4,12 +4,29 @@
     font-size: 40px;
 }
 
+.page .container{
+    background: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.6);
+    padding-bottom: 30px;
+}
+
+
 .page .container .title {
-    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.page{
+    background: url("http://college-chnu.cv.ua/pages/background.jpg");
+    
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
 }
 
 .page .container .pageInfo{
-    margin: 40px 0;
+    
+    width: 90%;
+    margin: auto;
 }
 .page .universal-page-container{
     width: 100%;
@@ -25,4 +42,8 @@
 }
 .page .pageInfo img{
     max-width: 100%;
+}
+
+.page p {
+    margin-bottom: 0 !important;
 }
