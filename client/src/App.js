@@ -6,6 +6,7 @@ import Header from './components/Shared/Header/Header';
 import Footer from './components/Shared/Footer/Footer';
 import AdminPanel from './components/AdminPanel/AdminPanel';
 import React from 'react';
+import AuthAdmin from './components/AdminPanel/AuthAdmin';
 import EditNewsItem from './components/AdminPanel/components/newsAdmin/EditNewsItem';
 import PagesEditor from './components/AdminPanel/SharedForAdmin/Editor';
 import PageEditor from './components/AdminPanel/components/pagesEditor/PageEditor';
@@ -18,7 +19,7 @@ import AllNews from './components/NewsPage/AllNews';
 import AdministrationPage from './components/Administration/AdministrationPage';
 import PersonEditor from './components/AdminPanel/components/personEditor/personEditor';
 import PersonCreate from './components/AdminPanel/components/personEditor/personCreate';
-
+import NotFoundComponent from './components/NotFoundPage/NotFoundComponent';
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
           <Route path ="/administration" exact element = {<AdministrationPage />}/>
           <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
           <Route path = "/admin/createPerson" exact element = {<React.Fragment><PersonCreate/></React.Fragment>}/>
+          <Route path='*' exact element = {<React.Fragment><NotFoundComponent/></React.Fragment>} />
+          <Route path = '/admin/auth' exact element = {<React.Fragment><AuthAdmin/></React.Fragment>}/>
         </Routes> 
         <LinksOther/>
         <Footer />
