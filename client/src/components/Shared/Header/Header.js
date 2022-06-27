@@ -10,9 +10,11 @@ function Header() {
     const [speciality, setSpeciality] = useState([]);
     const [student, setStudent]= useState([]);
     const [entrant,setEntrant] =useState([]);
+    const [active,setActive] = useState(false);
     const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
+        yakas();
         (async()=>{
             const res = await axios.get("https://collegeback.herokuapp.com/api/Page/GetAllPages");
             console.log(res);
@@ -21,6 +23,11 @@ function Header() {
             setEntrant(res.data.filter(x=>x.section === "entrant"));
         })()  
     },[])
+    const yakas = () =>{
+        let link = window.location.href;
+        console.log(link);
+    
+    }
     return (
         <div className="header" id = "header">
         <div className="container">
@@ -37,7 +44,7 @@ function Header() {
                         </ul>
                       </li>
                       
-                      <li><NavLink activeClassName="active" to = "/hfghf">Спеціальності</NavLink>
+                      <li><NavLink activeClassName="active" to="/gdfgdfpop" >Спеціальності</NavLink>
                              <ul className="submenu">
                                 {
                                     speciality?.map((item, index)=>
