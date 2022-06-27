@@ -13,6 +13,7 @@ import Page from './components/Shared/UniversalPage/Page';
 import History from './components/HistoryPage/History';
 import AdministrationPage from './components/Administration/AdministrationPage';
 import PersonEditor from './components/AdminPanel/components/personEditor/personEditor';
+import PersonCreate from './components/AdminPanel/components/personEditor/personCreate';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path ="/history" exact element = {<History />}/>
           <Route path ="/administration" exact element = {<AdministrationPage />}/>
           <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
+          <Route path = "/admin/createPerson" exact element = {<React.Fragment><PersonCreate/></React.Fragment>}/>
         </Routes> 
         <Footer />
       </BrowserRouter>
