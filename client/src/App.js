@@ -16,6 +16,8 @@ import LinksOther from './components/Shared/LinksOther/LinksOther';
 import AllNews from './components/NewsPage/AllNews';
 
 import AdministrationPage from './components/Administration/AdministrationPage';
+import PersonEditor from './components/AdminPanel/components/personEditor/personEditor';
+import PersonCreate from './components/AdminPanel/components/personEditor/personCreate';
 
 
 
@@ -36,7 +38,8 @@ function App() {
           <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
 
           <Route path ="/administration" exact element = {<AdministrationPage />}/>
-
+          <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
+          <Route path = "/admin/createPerson" exact element = {<React.Fragment><PersonCreate/></React.Fragment>}/>
         </Routes> 
         <LinksOther/>
         <Footer />
