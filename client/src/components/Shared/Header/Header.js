@@ -13,11 +13,11 @@ function Header() {
     const [speciality, setSpeciality] = useState([]);
     const [student, setStudent]= useState([]);
     const [entrant,setEntrant] =useState([]);
+    const [active,setActive] = useState(false);
     const [loading, setLoading] = useState(true);
     const [state, setState] = useState();
 
     useEffect(()=>{
-        
         (async()=>{
             const res = await axios.get("https://collegeback.herokuapp.com/api/Page/GetAllPages");
             console.log(res);
@@ -48,7 +48,6 @@ function Header() {
             setState(3);
         }
     }
-
     return (
         <div className="header" id = "header">
         <div className="container">
@@ -65,7 +64,9 @@ function Header() {
                         </ul>
                       </li>
                       
+
                       <li><NavLink activeClassName="active" to = "/speciality" className = {state === 3 ? "active" : "" }>Спеціальності</NavLink>
+
                              <ul className="submenu">
                                 {
                                     speciality?.map((item, index)=>

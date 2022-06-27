@@ -23,7 +23,7 @@ const NewsAndOther = () => {
            <div className="title">
                <h1>Новини</h1><div className="line"></div>
            </div>
-           <h3><Link to ="/news">Читати всі новини</Link></h3>
+           <h3><Link to ="/allnews">Читати всі новини</Link></h3>
            <div className="main_news_block">
                 <div className="first_news">
                     <div className="image">
