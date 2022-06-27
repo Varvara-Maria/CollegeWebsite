@@ -15,6 +15,13 @@ const AdministrationAdmin = () => {
             setArrays(res.data);
         })()
     },[])
+
+    const deletePerson = (id) =>{
+        service.deletePerson(id).then(res=>{
+            if(res.status ===200) window.location.reload();
+            else alert("Виникла помилка");
+        })
+    }
   return (
     <div className ="administration-admin">
         <div className="controls-buttons">
@@ -27,7 +34,7 @@ const AdministrationAdmin = () => {
                 <Divider/>
                     <h1>{item.pib}</h1>
                     <div className="buttons">
-                        <Button variant = "contained" color = "error" >Видалити</Button>
+                        <Button variant = "contained" color = "error" onClick = {()=>deletePerson(item.id)}>Видалити</Button>
                         <Button variant = "contained" onClick = {()=>window.location = `/admin/editPerson/${item.id}`}>Редагувати</Button>
                     </div>
                 <Divider/>
