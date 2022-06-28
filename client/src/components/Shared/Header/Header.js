@@ -82,6 +82,9 @@ function Header() {
                                     <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
+                                <Link to='/studParlament'>
+                                    <li>Студентський актив</li>
+                                </Link>
                             </ul>
                           </li>
                         <li><NavLink activeClassName="active" to="/entrant" className = {state === 5 ? "active" : "" } onClick = {()=>setState(5)}>Абітурієнту</NavLink>
