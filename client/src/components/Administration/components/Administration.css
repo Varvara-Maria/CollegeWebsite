@@ -6,7 +6,6 @@
     margin: 50px auto;
     max-width: 1000px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border: 3px solid #1A3853;
     padding: 20px;
@@ -22,6 +21,7 @@
 .administration-text {
     margin-left: 50px;
     text-align: center;
+    width: 100%;
 }
 
 .administration-post {

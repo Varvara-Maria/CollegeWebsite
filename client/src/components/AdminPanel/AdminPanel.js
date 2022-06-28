@@ -9,8 +9,9 @@ const AdminPanel = () => {
   const [menuState, setMenuState] = useState(null);
 
     useEffect(()=>{
+        localStorage.getItem("Admin")=== null ||  localStorage.getItem("Admin")=== undefined ? window.location = '/admin/auth' : console.log("admin") ;
         hideFooterAndHeader();
-    })
+    },[])
 
   return (
     <>
