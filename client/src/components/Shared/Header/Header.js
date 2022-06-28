@@ -53,6 +53,9 @@ function Header() {
                                     <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
                                     )
                                 }
+                                <Link to='/studParlament'>
+                                    <li>Студентський актив</li>
+                                </Link>
                             </ul>
                           </li>
                         <li><NavLink activeClassName="active" to="/gfdgggg">Абітурієнту</NavLink>
