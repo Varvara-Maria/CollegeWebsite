@@ -394,4 +394,9 @@ a{
       width: 100%;
       transition: 0.4s;
   }
+  .footer .container .list{
+    margin-left: 0 !important;
+  }
+  
+  
   }
