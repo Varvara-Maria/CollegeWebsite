@@ -2,6 +2,9 @@ import React from 'react'
 import './Footer.css';
 
 const Footer = () => {
+    const submit = (e)=>{
+        e.preventDefault();
+    }
   return (
     <div className="footer" id = "footer">
         <div className="container">
@@ -17,25 +20,25 @@ const Footer = () => {
                 <hr />
             </div>
             <div className="list">
-                <div className="footer-title">Our Campus</div>
+                <div className="footer-title">Спеціальності</div>
                 <hr />
                 <ul>
-                    <li>Acedemic</li>
-                    <li>Planning & Administration</li>
+                    <li>Підприємство, торг. та БД</li>
+                    <li>Право</li>
                     <li>Campus Safety</li>
-                    <li>Office of the Chancellor</li>
-                    <li>Facility Services</li>
+                    <li>Фінанси, банківська справа та страхування</li>
+                    <li>Облік і оподаткування</li>
                     <li>Human Resources</li>
                 </ul>
             </div>
             <div className="list">
                 <div className="footer-title">Send us feedback</div>
                 <hr />
-                <form>      
-                    <input name="name" type="text" class="feedback-input" placeholder="Ім'я" />   
-                    <input name="email" type="text" class="feedback-input" placeholder="Пошта" />
-                    <textarea name="text" class="feedback-input" placeholder="Коментар"></textarea>
-                    <button className='submit'>Надіслати</button>
+                <form onSubmit={(e)=> submit(e)} className="form-feedback">      
+                    <input  type="text" className="feedback-input" placeholder="Ім'я" />   
+                    <input  type="text" className="feedback-input" placeholder="Пошта" />
+                    <textarea   placeholder="Коментар" />
+                    <button type="submit"  className='submit'>Надіслати</button>
                 </form>
             </div>
         </div>

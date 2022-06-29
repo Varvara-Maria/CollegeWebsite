@@ -57,7 +57,8 @@
 }
 
 .footer .container .list form { 
-    max-width:420px; margin:20px auto; 
+    max-width:420px;
+     margin:20px auto; 
 }
 
 .footer .container .list .feedback-input {
@@ -70,20 +71,26 @@
   background-color: transparent;
   border:2px solid rgb(101, 180, 101);
   transition: all 0.3s;
-  padding: 13px;
+  padding: 10px;
   margin-bottom: 15px;
   width:100%;
   box-sizing: border-box;
   outline:0;
 }
-
+#texrarea-feedback{
+    display:  block !important;
+    resize: none;
+    max-width: 100%;
+    max-height: fit-content;
+    min-height: fit-content;
+    min-width: 100%;
+}
+.footer .fr-box {
+   
+}
 .footer .container .list .feedback-input:focus { border:2px solid rgb(38, 65, 38) }
 
-.footer .container .list textarea {
-  height: 100px;
-  line-height: 150%;
-  resize:vertical;
-}
+
 
 .footer .container .list .submit {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
@@ -100,4 +107,6 @@
   margin-top:-4px;
   font-weight:700;
 }
-.footer .container .list .submit:hover { background:rgb(101, 180, 101) }
+.footer .container .list .submit:hover 
+    { background:rgb(101, 180, 101) 
+}
