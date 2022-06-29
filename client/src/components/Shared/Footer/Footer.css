@@ -116,3 +116,12 @@
 .footer .container .list .submit:hover 
     { background:rgb(101, 180, 101) 
 }
+
+@media(max-width:426px){
+    .footer .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 50px 0;
+    }
+}

@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="list">
                 <div className="footer-title">Спеціальності</div>
-                <hr />
+                <hr  className="dn response" />
                 <ul>
                     <li>Підприємство, торг. та БД</li>
                     <li>Право</li>
