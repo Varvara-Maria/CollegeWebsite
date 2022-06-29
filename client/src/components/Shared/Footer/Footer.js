@@ -3,6 +3,9 @@ import LinksOther from '../LinksOther/LinksOther';
 import './Footer.css';
 
 const Footer = () => {
+    const submit = (e)=>{
+        e.preventDefault();
+    }
   return (
       <>
       
@@ -20,40 +23,26 @@ const Footer = () => {
                 <hr />
             </div>
             <div className="list">
-                <div className="footer-title">Our Campus</div>
+                <div className="footer-title">Спеціальності</div>
                 <hr />
                 <ul>
-                    <li>Acedemic</li>
-                    <li>Planning & Administration</li>
+                    <li>Підприємство, торг. та БД</li>
+                    <li>Право</li>
                     <li>Campus Safety</li>
-                    <li>Office of the Chancellor</li>
-                    <li>Facility Services</li>
+                    <li>Фінанси, банківська справа та страхування</li>
+                    <li>Облік і оподаткування</li>
                     <li>Human Resources</li>
                 </ul>
             </div>
             <div className="list">
-                <div className="footer-title">Campus Life</div>
+                <div className="footer-title">Send us feedback</div>
                 <hr />
-                <ul>
-                    <li>Accessibility</li>
-                    <li>Financial Aid</li>
-                    <li>Food Services</li>
-                    <li>Housing</li>
-                    <li>Information Technologies</li>
-                    <li>Student Life</li>
-                </ul>
-            </div>
-            <div className="list">
-                <div className="footer-title">Academics</div>
-                <hr />
-                <ul>
-                    <li>Canvas</li>
-                    <li>Catalyst</li>
-                    <li>Library</li>
-                    <li>Time Schedule</li>
-                    <li>Apply For Admissions</li>
-                    <li>Pay My Tuition</li>
-                </ul>
+                <form onSubmit={(e)=> submit(e)} className="form-feedback">      
+                    <input  type="text" className="feedback-input" placeholder="Ім'я" />   
+                    <input  type="text" className="feedback-input" placeholder="Пошта" />
+                    <textarea   placeholder="Коментар" />
+                    <button type="submit"  className='submit'>Надіслати</button>
+                </form>
             </div>
         </div>
     </div>

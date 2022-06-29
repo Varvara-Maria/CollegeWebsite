@@ -11,7 +11,7 @@ const MainHistory = () => {
           <p className='history-college-info'>Історія коледжу</p>
           </div>
       </div>
-    </div>
+    </div>  
   )
 }
 

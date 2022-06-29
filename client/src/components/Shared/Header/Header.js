@@ -4,7 +4,11 @@ import { NavLink,Link } from 'react-router-dom';
 import PageService from "../../../Services/PageService"
 import axios from 'axios';
 import { BeatLoader } from 'react-spinners';
+
+import {useMedia} from 'react-use-media'
+
 import { useLocation } from 'react-router';
+
 
 
 function Header() {
@@ -16,6 +20,16 @@ function Header() {
     const [active,setActive] = useState(false);
     const [loading, setLoading] = useState(true);
     const [state, setState] = useState();
+
+    const resolution = useMedia('(max-width : 769px)');
+  const [classState, setClassState] =useState(false);
+  
+  const handleMenuClick =()=>{  
+    if(classState){
+        setClassState(false);
+    }
+    else setClassState(true);
+}
 
     useEffect(()=>{
         (async()=>{
@@ -51,9 +65,11 @@ function Header() {
     return (
         <div className="header" id = "header">
         <div className="container">
+        {!resolution ? <>
             <div className="img">
                 <img src="https://i.ibb.co/j3ShSfG/main-1.png" alt="header" />
             </div>
+           
          <div className="menu">
                   <ul className = "topmenu">
                       <li> <NavLink activeClassName="active" to="/" onClick ={()=>setState(1)}>Головна</NavLink></li>
@@ -100,9 +116,70 @@ function Header() {
                       
                   </ul>
               </div>
-      
+              </>
+              :<div className="response-block">  
+                        <div className="img">
+                             <img src="https://i.ibb.co/j3ShSfG/main-1.png" alt="img" />
+                        </div>
+                        <div className="responsive_menu">
+                                <div className={`btn ${classState ? 'active' : 'not-active'}`} onClick ={handleMenuClick} id = 'btn'>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                        </div>  
+                    </div>     
+                }
+
+               
               </div>
-        
+              {classState ? 
+                    <div  onClick ={()=>setClassState(false)}  className="dropdown-menu">
+                        <ul  className=" list_menu josefin-sans">
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to="/">Головна</NavLink> </li>
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to = "history">Історія</NavLink>
+                                                                    <ul className="submenu">
+                                                                                <li>Коледжу</li>
+                                                                                <li>Університету</li>
+                                                                        </ul></li>
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to="/gdfgdfpop" >Спеціальності</NavLink>
+                             <ul className="submenu">
+                                {
+                                    speciality?.map((item, index)=>
+                                        <li><Link to ={`/${item.section}/${item.id}`}>{item.title}</Link></li>
+                                    )
+                                }
+                            </ul>
+                            </li>
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to="/gfdg">Студенту</NavLink>
+                          <ul className="submenu">
+                                {
+                                    student?.map((item, index)=>
+                                    <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
+                                    )
+                                }
+                            </ul></li>
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to="/gfdgggg">Абітурієнту</NavLink>
+                                    <ul className="submenu">
+                                        {
+                                            entrant?.map((item, index)=>
+                                                <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
+                                            )
+                                        }
+                                    </ul></li>
+                        <li onClick ={()=>setClassState(false)}> <NavLink activeClassName="active" to="/gfdgggg">Абітурієнту</NavLink>
+                            <ul className="submenu">
+                                {
+                                    entrant?.map((item, index)=>
+                                        <Link to ={`/${item.section}/${item.id}`}><li>{item.title}</li></Link>
+                                    )
+                                }
+                            </ul></li>
+                            <li><NavLink activeClassName="active" to="/administration">Адміністрація</NavLink></li>
+                     </ul>
+                    </div>  
+                : <></>  
+            }
       </div>
     );
   }

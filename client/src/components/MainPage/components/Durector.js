@@ -59,7 +59,7 @@ const Durector = () => {
                             </div> 
                                 <p className="cutata">Директор, ОЛЕКСАНДР СОБЧУК</p>
                         </div>
-                        <img src="https://i.ibb.co/1mmrSb6/WP-20191109-15-54-00-Pro-1.png" alt="" />  
+                       
                     </div>
 
                 </div>
