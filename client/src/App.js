@@ -22,6 +22,7 @@ import PersonEditor from './components/AdminPanel/components/personEditor/person
 import PersonCreate from './components/AdminPanel/components/personEditor/personCreate';
 import NotFoundComponent from './components/NotFoundPage/NotFoundComponent';
 import CreateStudParlament from './components/AdminPanel/components/StudParlament/createStudParlament';
+import SingleNews from './components/NewsPage/SingleNews';
 
 
 
@@ -40,7 +41,7 @@ function App() {
           <Route path ="/history" exact element = {<History />}/>
 
           <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
-
+          <Route path = "/news/:id" exact element = {<React.Fragment><SingleNews/></React.Fragment>}/>
           <Route path ="/administration" exact element = {<AdministrationPage />}/>
           <Route path = '/studParlament' exact element =  {<StudParlament />} />
           <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>

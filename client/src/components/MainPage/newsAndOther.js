@@ -34,7 +34,7 @@ const NewsAndOther = () => {
                             <h4>{ParseDate(news[0]?.date)}</h4>
                         </div>
                         <div className="news_name">
-                            <p>{news[0]?.title}</p>
+                            <p><Link to ={`/news/${news[0]?.id}`}>{news[0]?.title}</Link></p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ const NewsAndOther = () => {
                                 <h4>{ParseDate(news[1]?.date)}</h4>
                             </div>
                             <div className="news_name">
-                                <p>{news[1]?.title}</p>
+                                <p><Link to ={`/news/${news[1]?.id}`}>{news[1]?.title}</Link></p>
                             </div>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const NewsAndOther = () => {
                         <div className="info">
                             <div className="date"><h4>{ParseDate(news[2]?.date)}</h4></div>
                             <div className="news_name">
-                                <p>{news[2]?.title}</p>
+                                <p><Link to ={`/news/${news[2]?.id}`}>{news[2]?.title}</Link></p>
                             </div>
                         </div>
                     </div>
@@ -73,7 +73,7 @@ const NewsAndOther = () => {
                                 <h4>{ParseDate(news[3]?.date)}</h4>
                             </div>
                             <div className="news_name">
-                                <p><Link to ="/">{news[3]?.title}</Link></p>
+                                <p><Link to ={`/news/${news[3]?.id}`}>{news[3]?.title}</Link></p>
                             </div>
                         </div>
                     </div>
