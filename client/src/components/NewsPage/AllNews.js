@@ -12,7 +12,6 @@ function AllNews() {
 
     const handleChange = ( event,value) => {
         setPagincount( value);
-        console.log("gfdgdf");
       };
       useEffect(() => {
         
@@ -23,9 +22,7 @@ function AllNews() {
     useEffect(()=>{
         (async()=>{
             const res = await newsService.getAllNews();
-            setNews(res.data);  
-            console.log("ID");
-            console.log(res.data);
+            setNews(res.data); 
         })()   
       },[])
   return (

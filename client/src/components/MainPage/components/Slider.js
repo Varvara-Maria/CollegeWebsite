@@ -4,7 +4,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 function Carousel() {
-
+    
     const sliderSettings = {
         arrows: true,
         slidesToShow: 1,
@@ -21,10 +21,13 @@ function Carousel() {
         <div className="element-slider">
             
              <img src="/slider1.jpg" alt="" />
+          
             <div className="text-slider">
-                <h4>Найкращий коледж у місті</h4>
-                <h5>Коледж ЧНУ ім. Юрія Федьковича</h5>
-                 <button>Детальніше</button>
+            <h4>Primus inter pares</h4>
+            <h5>Відокремлений структурний підрозділ<br/>"ФАХОВИЙ КОЛЕДЖ 
+                <br/>Чернівецького національного університету<br/> 
+                імені Юрія Федьковича"</h5>
+                 <button>Детальніше</button>   
             </div>
         </div>
         <div className="element-slider">    
