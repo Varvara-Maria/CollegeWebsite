@@ -1,15 +1,27 @@
 .container{
   margin:0 auto;
   width: 80%;
+  flex: 1 1 auto;
   height: inherit;
 }
-
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
+.App .main-block{
+  flex:1 1 auto;
+}
 .App{
   
- /* min-height: 100vh;
+ min-height: 100%;
  display: flex;
  flex-direction: column;
- justify-content: space-between; */
+ 
  
 }
 button{
