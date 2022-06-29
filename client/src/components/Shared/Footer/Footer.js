@@ -29,28 +29,14 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="list">
-                <div className="footer-title">Campus Life</div>
+                <div className="footer-title">Send us feedback</div>
                 <hr />
-                <ul>
-                    <li>Accessibility</li>
-                    <li>Financial Aid</li>
-                    <li>Food Services</li>
-                    <li>Housing</li>
-                    <li>Information Technologies</li>
-                    <li>Student Life</li>
-                </ul>
-            </div>
-            <div className="list">
-                <div className="footer-title">Academics</div>
-                <hr />
-                <ul>
-                    <li>Canvas</li>
-                    <li>Catalyst</li>
-                    <li>Library</li>
-                    <li>Time Schedule</li>
-                    <li>Apply For Admissions</li>
-                    <li>Pay My Tuition</li>
-                </ul>
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Ім'я" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Пошта" />
+                    <textarea name="text" class="feedback-input" placeholder="Коментар"></textarea>
+                    <button className='submit'>Надіслати</button>
+                </form>
             </div>
         </div>
     </div>
