@@ -21,6 +21,8 @@ import StudParlament from './components/StudParlament/StudParlament';
 import PersonEditor from './components/AdminPanel/components/personEditor/personEditor';
 import PersonCreate from './components/AdminPanel/components/personEditor/personCreate';
 import NotFoundComponent from './components/NotFoundPage/NotFoundComponent';
+import CreateStudParlament from './components/AdminPanel/components/StudParlament/createStudParlament';
+import SingleNews from './components/NewsPage/SingleNews';
 
 
 
@@ -29,25 +31,30 @@ function App() {
     <div className="App">
      <BrowserRouter>
       <Header/>
+      <div className="main-block">
         <Routes>
-          <Route path ="/" exact element = {<MainPage/>}/>
-          <Route path ="/admin" exact element = {<React.Fragment><AdminPanel/></React.Fragment>}/>
-          <Route path ="/admin/newsEdit/:id" exact element = {<React.Fragment><EditNewsItem/></React.Fragment>}/>
-          <Route path = "/admin/createNewPage/:section" exact element = {<React.Fragment><PageEditor/></React.Fragment>}/>
-          <Route path = "/admin/editPage/:section/:id" exact element ={<React.Fragment><PageEditor/></React.Fragment>}/>
-          <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
-          <Route path ="/history" exact element = {<History />}/>
+          
+            <Route path ="/" exact element = {<React.Fragment><MainPage/><LinksOther/></React.Fragment>}/>
+            <Route path ="/admin" exact element = {<React.Fragment><AdminPanel/></React.Fragment>}/>
+            <Route path ="/admin/newsEdit/:id" exact element = {<React.Fragment><EditNewsItem/></React.Fragment>}/>
+            <Route path = "/admin/createNewPage/:section" exact element = {<React.Fragment><PageEditor/></React.Fragment>}/>
+            <Route path = "/admin/editPage/:section/:id" exact element ={<React.Fragment><PageEditor/></React.Fragment>}/>
+            <Route path = "/:section/:id" exact element ={<React.Fragment><Page/></React.Fragment>}/>
+            <Route path ="/history" exact element = {<History />}/>
 
-          <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
-
-          <Route path ="/administration" exact element = {<AdministrationPage />}/>
-          <Route path = '/studParlament' exact element =  {<StudParlament />} />
-          <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
-          <Route path = "/admin/createPerson" exact element = {<React.Fragment><PersonCreate/></React.Fragment>}/>
-          <Route path='*' exact element = {<React.Fragment><NotFoundComponent/></React.Fragment>} />
-          <Route path = '/admin/auth' exact element = {<React.Fragment><AuthAdmin/></React.Fragment>}/>
-        </Routes> 
-        <LinksOther/>
+            <Route path ="/allnews" exact element = {<React.Fragment><AllNews/></React.Fragment>}/>
+            <Route path = "/news/:id" exact element = {<React.Fragment><SingleNews/></React.Fragment>}/>
+            <Route path ="/administration" exact element = {<AdministrationPage />}/>
+            <Route path = '/studParlament' exact element =  {<StudParlament />} />
+            <Route path = "/admin/editPerson/:id" exact element = {<React.Fragment><PersonEditor/></React.Fragment>}/>
+            <Route path = "/admin/createPerson" exact element = {<React.Fragment><PersonCreate/></React.Fragment>}/>
+            <Route path='*' exact element = {<React.Fragment><NotFoundComponent/></React.Fragment>} />
+            <Route path = '/admin/auth' exact element = {<React.Fragment><AuthAdmin/></React.Fragment>}/>
+            <Route path = '/admin/createNewPersonStudParlament' exact element = {<React.Fragment><CreateStudParlament isCreate = {true}/></React.Fragment>}/>
+        
+         
+           </Routes> 
+           </div>
         <Footer />
       </BrowserRouter>
     </div>

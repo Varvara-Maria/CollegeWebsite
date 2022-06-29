@@ -1,4 +1,5 @@
 import React from 'react'
+import LinksOther from '../LinksOther/LinksOther';
 import './Footer.css';
 
 const Footer = () => {
@@ -6,6 +7,8 @@ const Footer = () => {
         e.preventDefault();
     }
   return (
+      <>
+      
     <div className="footer" id = "footer">
         <div className="container">
             <div class='footer-info'>
@@ -25,24 +28,26 @@ const Footer = () => {
                 <ul>
                     <li>Підприємство, торг. та БД</li>
                     <li>Право</li>
-                    <li>Campus Safety</li>
                     <li>Фінанси, банківська справа та страхування</li>
                     <li>Облік і оподаткування</li>
-                    <li>Human Resources</li>
+                    <li>Прикладна математика</li>
+                    <li>Ком`ютерні науки</li>
+                    <li>Ком`ютерна інженерія</li>
                 </ul>
             </div>
             <div className="list">
-                <div className="footer-title">Send us feedback</div>
-                <hr />
+                <div className="footer-title">Напишіть нам!</div>
+                
                 <form onSubmit={(e)=> submit(e)} className="form-feedback">      
                     <input  type="text" className="feedback-input" placeholder="Ім'я" />   
                     <input  type="text" className="feedback-input" placeholder="Пошта" />
-                    <textarea   placeholder="Коментар" />
+                    <textarea id="texrarea-feedback"  class="feedback-input"  placeholder="Коментар" />
                     <button type="submit"  className='submit'>Надіслати</button>
                 </form>
             </div>
         </div>
     </div>
+    </>
   )
 }
 
