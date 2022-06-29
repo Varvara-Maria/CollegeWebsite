@@ -6,21 +6,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88f03b2d-17fc-41fb-9985-db9a756b632a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Controllers/StudParlamentController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/IRepositories/IStudParlamentService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Models/StudParlament.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/Repositories/StudParlamentRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CollegeApi/ViewModels/StudParlamentViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TasksAMCBridge/Tasks1/Tasks1.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CollegeApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/bin/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/CollegeApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/ref/CollegeApi.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/refint/CollegeApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/Debug/net6.0/refint/CollegeApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CollegeApi/obj/staticwebassets.pack.sentinel" beforeDir="false" afterPath="$PROJECT_DIR$/CollegeApi/obj/staticwebassets.pack.sentinel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/MainArea.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/MainArea.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/SideBarMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/AdminPanel/components/SideBarMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client/src/components/Shared/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client/src/components/Shared/Footer/Footer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +90,7 @@
       <workItem from="1655967980893" duration="5857000" />
       <workItem from="1656242052840" duration="510000" />
       <workItem from="1656334517368" duration="162000" />
+      <workItem from="1656493042284" duration="64000" />
     </task>
     <servers />
   </component>

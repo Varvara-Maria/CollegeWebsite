@@ -19,7 +19,7 @@ const SideBarMenu = ({setState}) => {
       name : "Абітурієнту"
     },
     {
-      name : "Самоврядування"
+      name : "Студентський актив"
     },
     {
       name : "ОМО"

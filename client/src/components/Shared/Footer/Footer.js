@@ -1,8 +1,11 @@
 import React from 'react'
+import LinksOther from '../LinksOther/LinksOther';
 import './Footer.css';
 
 const Footer = () => {
   return (
+      <>
+      
     <div className="footer" id = "footer">
         <div className="container">
             <div class='footer-info'>
@@ -54,6 +57,7 @@ const Footer = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
