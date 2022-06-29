@@ -3,7 +3,6 @@
     width: 100%;
     position: sticky;
     top:0;
-    position: static !important;
     background: #1A3853;
     z-index: 2;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.8);
@@ -298,6 +297,7 @@ a{
    }
    .header{
      height: fit-content;
+     position: relative !important;
    }
    .header .container{
     
