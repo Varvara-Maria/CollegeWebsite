@@ -2,6 +2,7 @@ import React from 'react'
 import './mainArea.css'
 import NewsAdmin from './newsAdmin/NewsAdmin';
 import PagesList from '../components/pagesEditor/pagesList'
+import AdministrationAdmin from './AdministrationAdmin.js/AdministrationAdmin';
 
 const MainArea = ({menuState}) => {
   return (
@@ -10,7 +11,7 @@ const MainArea = ({menuState}) => {
         {(function (){
           switch(menuState){
             case 0 : return <p>{menuState}</p>
-            case 1 : return (<p>{menuState}</p>);
+            case 1 : return <AdministrationAdmin/>;
             case 2 : return <PagesList section ={"speciality"}/>;
             case 3 : return <PagesList section ={"student"}/>;
             case 4 : return <PagesList section ={"entrant"}/>;

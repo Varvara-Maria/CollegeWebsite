@@ -3,6 +3,7 @@ import './Administration.css'
 import {Divider} from '@mui/material'
 
 import AdministrationService from '../../../Services/AdministrationService';
+import OneAdmin from './OneAdmin';
 
 function Administration() {
     const administrationService = new AdministrationService();
@@ -20,18 +21,7 @@ function Administration() {
   return  <div className='administration'>
   {
   administration?.map((item) => <div className='container'>
-          <div className='administration-info'>
-              <img src= {item.image} alt = {item.pib}/>
-              <div className='administration-text'>
-                  <h1 className='administration-post'>
-                      {item.posada}
-                  </h1>
-                  <p className='administration-name'>
-                      <Divider>{item.pib}</Divider>
-                  </p>
-                  <p className='administration-work'>{item.status}</p>
-              </div>
-          </div>
+          <OneAdmin item ={item}/>
       </div>
   
   )
