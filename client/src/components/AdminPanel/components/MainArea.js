@@ -3,6 +3,7 @@ import './mainArea.css'
 import NewsAdmin from './newsAdmin/NewsAdmin';
 import PagesList from '../components/pagesEditor/pagesList'
 import AdministrationAdmin from './AdministrationAdmin.js/AdministrationAdmin';
+import StudParlament from './StudParlament/studParlament';
 
 const MainArea = ({menuState}) => {
   return (
@@ -15,7 +16,7 @@ const MainArea = ({menuState}) => {
             case 2 : return <PagesList section ={"speciality"}/>;
             case 3 : return <PagesList section ={"student"}/>;
             case 4 : return <PagesList section ={"entrant"}/>;
-            case 5 : return <PagesList section ={"studparlament"}/>;
+            case 5 : return <StudParlament/>;
             case 6 : return <PagesList section ={"omo"}/>;
             case 7 : return <NewsAdmin/>;
             default :

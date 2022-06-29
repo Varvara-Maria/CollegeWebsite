@@ -29,8 +29,8 @@
 .history-block .history-director {
     background-color: rgba(26, 56, 83);
     color: white;
-    max-height: 450px;
-    margin-top: 60px ;
+    max-height: 50%;
+    margin: 50px 0;
     padding: 50px 25px;
     font-weight: 400;
     line-height: 20px;
@@ -51,7 +51,7 @@
 }
 
 .history .history-faculty-title hr {
-    width: 650px;
+    width: 50%;
 }
 
 .history-faculty .history-faculty-container {
@@ -73,6 +73,7 @@
 }
 
 .history-faculty .history-faculty-department img {
+    border-radius: 50%;
     width: 100px;
     height: 100px;
     margin: 10px auto;
@@ -81,7 +82,6 @@
 .history-faculty-department .department {
     display: flex;
     flex-direction: column;
-
 }
 
 .history-faculty-department .fa-scale-balanced {
@@ -109,7 +109,7 @@
     margin-bottom: 40px;
 }
 
-.specialty {
+.history-specialty .specialty {
     display: flex;
     justify-content: space-between;
 }
@@ -131,10 +131,52 @@
     color:rgb(148, 148, 148);
 }
 
-.specialty img {
-    width: 650px;
-    height: 250px;
+.history-specialty .specialty img {
+    width: 50%;
+    height: 30%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     border-radius: 5px;
 }
 
+@media (max-width: 426px){ 
+    .history-block {
+        display: block;
+    }
+
+    .history-block .history-begining {
+        width: 100%;
+    }
+
+    .history-faculty-container .history-faculty-title {
+        display: block;
+    }
+
+    .history-faculty-container .history-faculty-title hr {
+        display: none;
+    }
+
+    .history-faculty .history-faculty-department {
+        display: block;
+        
+    }
+
+    .history-faculty .history-faculty-department .department {
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .history-faculty .history-faculty-department .department p {
+        width: 100%;
+        margin: 5px auto;
+    }
+
+    .history-specialty .specialty {
+        display: block;
+    }
+
+    .history-specialty .specialty img {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

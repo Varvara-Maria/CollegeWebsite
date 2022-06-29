@@ -50,17 +50,17 @@ const Story = () => {
             </div>
             <div className='history-faculty-department'>
               <div className='department'>
-                <img src="https://cdn-icons-png.flaticon.com/512/2490/2490315.png" alt="" />
+                <img src="https://i.ibb.co/tpP0jHC/NATURAL.png" alt="" />
                 <h2>Природниче</h2>
                 <p className='button'><Link to ="/">Детальніше</Link></p>
               </div>
               <div className='department'>
-                <img src='https://cdn-icons-png.flaticon.com/512/3310/3310624.png' alt='' />
+                <img src='https://i.ibb.co/MkzX40y/EKONOM.png' alt='' />
                 <h2>Економічне</h2>
                 <p className='button'><Link to ="/">Детальніше</Link></p>
               </div>
               <div className='department'>
-                <img src="https://cdn-icons-png.flaticon.com/512/1781/1781346.png" alt="" />
+                <img src="https://i.ibb.co/h1LFsgS/PRAVO.png" alt="" />
                 <h2>Юридичне</h2>
                 <p className='button'><Link to ="/">Детальніше</Link></p>
               </div>
