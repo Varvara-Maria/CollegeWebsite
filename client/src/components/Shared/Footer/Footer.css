@@ -20,7 +20,8 @@
 
 .footer .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 25% 40% 35%;
+    grid-template-rows: auto;
     padding: 50px 0;
 }
 
@@ -37,6 +38,9 @@
     color: #8f979b;
     margin-bottom: 20px;
     line-height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .footer hr {
@@ -60,7 +64,9 @@
     max-width:420px;
      margin:20px auto; 
 }
-
+.footer .form-feedback .submit{
+    margin-top: 20px;
+}
 .footer .container .list .feedback-input {
   color:white;
   font-family: Helvetica, Arial, sans-serif;
@@ -86,7 +92,7 @@
     min-width: 100%;
 }
 .footer .fr-box {
-   
+    display: none;
 }
 .footer .container .list .feedback-input:focus { border:2px solid rgb(38, 65, 38) }
 
@@ -104,7 +110,7 @@
   padding-top:10px;
   padding-bottom:10px;
   transition: all 0.3s;
-  margin-top:-4px;
+  margin-top:5px;
   font-weight:700;
 }
 .footer .container .list .submit:hover 
