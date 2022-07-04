@@ -75,9 +75,9 @@ function Header() {
                       <li> <NavLink activeClassName="active" to="/" onClick ={()=>setState(1)}>Головна</NavLink></li>
                       <li><NavLink activeClassName="active" to = "history" onClick ={()=>setState(2)}>Історія</NavLink>
                       <ul className="submenu">
-                                <li>Коледжу</li>
-                                <li>Університету</li>
-                        </ul>
+                            <li>Коледжу</li>
+                            <li>Університету</li>
+                     </ul>
                       </li>
                       
 
