@@ -106,13 +106,16 @@ a{
     top:100%;
     left: 0;
     cursor: pointer;
-    
+
 
 }
 .header .menu .submenu li:hover{
     color:rgb(233, 224, 224);
     background: #496a86;
-}.header .menu .submenu li{
+
+}
+
+.header .menu .submenu li{
     display: block !important;
     place-items: start;
     width: 100%;
